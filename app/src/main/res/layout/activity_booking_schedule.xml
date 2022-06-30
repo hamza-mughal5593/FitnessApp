@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".v1.activity.booking.BookingDetailsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDarkGreyPrimary"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/tv_abs_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorDarkGreyPrimary"
+            android:paddingTop="56dp"
+            android:paddingRight="24dp"
+            android:paddingBottom="5dp"
+            android:text="KOMBES PAROI N9"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+           />
+
+        <RelativeLayout
+            android:id="@+id/booking_logout"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/going_bg_unselcted"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log Out"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/_11sdp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:id="@+id/v_abs_bg_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorDarkGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel" />
+
+    <TextView
+        android:id="@+id/tv_abs_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack"
+        android:paddingStart="24dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="5dp"
+        android:text="Address"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rel" />
+
+    <TextView
+        android:id="@+id/tv_abs_total"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorDarkGrey"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/amount"
+        android:backgroundTint="#fff"
+        android:textColor="@android:color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_abs_submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_abs_submit" />
+
+    <TextView
+        android:id="@+id/tv_abs_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:paddingStart="48dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="48dp"
+        android:paddingBottom="16dp"
+        android:text="@string/book"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_abs_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abs_desc">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.mtechsoft.fitmy.v1.TouchyWebView
+                android:id="@+id/wv_abs_calendar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scrollbars="vertical|horizontal"></com.mtechsoft.fitmy.v1.TouchyWebView>
+
+            <TextView
+                android:id="@+id/tv_abs_08"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_rounded_grey_primary"
+                android:paddingStart="48dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="Sila semak tarikh mula dan akhir"
+                android:textColor="@android:color/white"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/wv_abs_calendar"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/wv_abs_calendar" />
+
+            <ImageView
+                android:id="@+id/iv_abs_03"
+                android:layout_width="40dp"
+                android:layout_height="0dp"
+                android:background="@drawable/bg_rounded_white"
+                android:padding="8dp"
+                android:src="@drawable/ic_caution_sign"
+                android:tint="@color/colorOrange"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_abs_08"
+                app:layout_constraintStart_toStartOf="@+id/tv_abs_08"
+                app:layout_constraintTop_toTopOf="@+id/tv_abs_08" />
+
+            <TextView
+                android:id="@+id/tv_abs_03"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/start_date"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abs_08" />
+
+            <TextView
+                android:id="@+id/tv_abs_2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/start_time"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/et_abs_date_start"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/tv_abs_16"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/rate_type"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/et_abs_time_start" />
+
+            <TextView
+                android:id="@+id/tv_abs_17"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/no_of_users"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/s_abs_jenis_kadar" />
+
+            <TextView
+                android:id="@+id/tv_abs_"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/reservation_unit"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/et_abs_jumlah_pengguna" />
+
+            <TextView
+                android:id="@+id/tv_abs_15"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/end_date"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/tv_abs_03" />
+
+            <TextView
+                android:id="@+id/tv_abs_3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:text="@string/end_time"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/tv_abs_2"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/et_abs_date_start"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abs_03" />
+
+            <TextView
+                android:id="@+id/et_abs_time_start"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:textColor="#fff"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="00:00:00"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abs_2"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/et_abs_jumlah_pengguna"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/s_abs_jenis_kadar"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/wv_abs_calendar"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abs_17" />
+
+            <TextView
+                android:id="@+id/et_abs_date_end"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:textColor="#fff"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/wv_abs_calendar"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abs_03" />
+
+            <TextView
+                android:id="@+id/et_abs_time_end"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="#fff"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="00:00:00"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/wv_abs_calendar"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/et_abs_time_start"
+                android:visibility="gone"/>
+
+            <Spinner
+                android:id="@+id/s_abs_jenis_kadar"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:textColor="#fff"
+                android:entries="@array/s_abs_jenis_kadar"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Pengguna Awam"
+                android:textSize="14sp"
+
+                app:layout_constraintEnd_toEndOf="@+id/et_abs_date_end"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abs_16" />
+
+            <Spinner
+                android:id="@+id/s_abs_bil_unit_tempahan"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:entries="@array/s_abs_bil_unit_tempahan"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="Pengguna Awam"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/et_abs_date_end"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abs_"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

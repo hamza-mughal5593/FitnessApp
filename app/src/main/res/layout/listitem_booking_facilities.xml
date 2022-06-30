@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:background="@drawable/box001">
+
+        <TextView
+            android:id="@+id/tv_bf_li_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_bf_li_01"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/iv_bf_li_01"
+            android:lines="2"
+            android:text="Text 1"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_bf_li_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:layout_toEndOf="@+id/iv_bf_li_01"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="text 2"
+            android:textColor="#000"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_bf_li_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="text 3"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_bf_li_01"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="12dp"
+            android:contentDescription="@string/app_name"
+            android:padding="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_fma_logo" />
+    </RelativeLayout>
+</RelativeLayout>

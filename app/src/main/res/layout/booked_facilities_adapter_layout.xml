@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        android:weightSum="3">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/facility_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/facility_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_12sdp"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/facility_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_12sdp"
+
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/facility_units"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/heading"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textSize="@dimen/_11sdp"></TextView>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/facility_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300.00"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_11sdp"
+                ></TextView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

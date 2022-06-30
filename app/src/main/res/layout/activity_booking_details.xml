@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".v1.activity.booking.BookingDetailsActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/g_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/bg_booking_01"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_abd_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDarkGreyPrimary"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="5dp"
+        android:text="KOMBES PAROI N9"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <View
+        android:id="@+id/v_abd_bg_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_abd_address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abd_name" />
+
+    <TextView
+        android:id="@+id/tv_adb_operating_hour_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/Operating_Hour"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/g_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abd_name" />
+
+    <TextView
+        android:id="@+id/tv_adb_operating_hour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="0900 hour - 2200 hour"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_adb_operating_hour_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_adb_operating_hour_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_adb_operating_hour_label" />
+
+    <TextView
+        android:id="@+id/tv_adb_address_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/Address"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/g_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abd_name" />
+
+    <TextView
+        android:id="@+id/tv_abd_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="16dp"
+        android:text="Tapian Gelanggang Paroi, 70400 Seremban, Negeri Sembilan"
+        android:textColor="@android:color/white"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_adb_address_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_adb_address_label"
+        app:layout_constraintTop_toBottomOf="@+id/tv_adb_address_label" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_abd_bg_01">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">]
+
+            <LinearLayout
+                android:id="@+id/ll_ab_list"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

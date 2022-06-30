@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".v1.activity.fitness.StartFitness">
+
+    <ImageView
+        android:id="@+id/img"
+        android:src="@drawable/bg_07"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="#fff"
+        android:padding="7dp"
+        android:background="@drawable/circle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_toggle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_below="@+id/img"
+        android:id="@+id/view11"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#fff"
+        android:background="@drawable/bg_rounded_white_outline_grey" >
+    <ImageView
+        android:id="@+id/iv_af_gps_01"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_circle_white_outline_grey"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_route" />
+
+        <RelativeLayout
+            android:layout_toEndOf="@+id/iv_af_gps_01"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_af_gps_label_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/tv_fitness_005"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_below="@+id/tv_af_gps_label_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/tv_fitness_006"
+                android:textColor="#000"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/b_af_gps_start"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_rounded_big_white_outline_orange"
+            android:text="@string/tv_fitness_007" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/navLayout"
+        android:layout_width="100dp"
+        android:visibility="gone"
+        android:background="@color/colorBlack"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/v_nav_home"
+            android:orientation="vertical"
+            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_nav_home"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_home"
+                android:tint="#fff"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_home"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/tv_nav_home"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v_nav_fitness"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_nav_fitness"
+                android:tint="#fff"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_booking"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_fitness"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/tv_nav_booking"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v_nav_reward"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_nav_reward"
+                android:tint="#fff"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_reward"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_reward"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/tv_nav_reward"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v_nav_event"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_nav_event"
+                android:tint="#fff"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_event"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_event"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/tv_nav_event"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v_nav_booking"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_nav_booking"
+                android:tint="#fff"
+                android:layout_gravity="center"
+                android:src="@drawable/profile_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_booking"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Profile"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/v_nav_history"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_nav_history"
+                android:tint="#fff"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_history"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_history"
+                android:fontFamily="sans-serif-condensed"
+                android:text="History"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/v_nav_start"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/iv_nav_start"
+                android:tint="#fff"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_fitness"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_start"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Fitness"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/coverView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:visibility="gone"
+        android:background="#00000000"
+        />
+</RelativeLayout>

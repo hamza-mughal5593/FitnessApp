@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_06">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@color/colorBlack" />
+
+    <View
+        android:id="@+id/v_opa_phy_00"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/bg_rounded_dark_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/b_opa_phy_03"
+        app:layout_constraintEnd_toStartOf="@+id/b_opa_phy_03"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_opa_phy_03" />
+
+    <Button
+        android:id="@+id/b_opa_phy_03"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/bg_rounded_orange"
+        android:onClick="goNext"
+        android:text="@string/b_opa_phy_03"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/v_opa_phy_00" />
+
+    <ImageButton
+        android:id="@+id/b_opa_phy_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_orange"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_avatar_man"
+        app:layout_constraintBottom_toBottomOf="@+id/v_opa_phy_00"
+        app:layout_constraintEnd_toStartOf="@+id/b_opa_phy_02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/v_opa_phy_00"
+        app:layout_constraintTop_toTopOf="@+id/v_opa_phy_00" />
+
+    <ImageButton
+        android:id="@+id/b_opa_phy_02"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_dark_grey"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_avatar_girl"
+        app:layout_constraintBottom_toBottomOf="@+id/v_opa_phy_00"
+        app:layout_constraintEnd_toEndOf="@+id/v_opa_phy_00"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b_opa_phy_01"
+        app:layout_constraintTop_toTopOf="@+id/v_opa_phy_00"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/b_opa_phy_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="goBack"
+        android:src="@drawable/ic_back"
+        android:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_02"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_opa_phy_01"
+        app:layout_constraintStart_toStartOf="@+id/tv_opa_phy_01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_opa_phy_01" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_01"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/b_opa_phy_04"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_opa_phy_04" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_03"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_01"
+        app:layout_constraintStart_toStartOf="@+id/v_opa_phy_01" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_04"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_01"
+        app:layout_constraintEnd_toEndOf="@+id/v_opa_phy_01" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_05"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_02"
+        app:layout_constraintStart_toStartOf="@+id/v_opa_phy_02" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_06"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_02"
+        app:layout_constraintEnd_toEndOf="@+id/v_opa_phy_02" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_07"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_03"
+        app:layout_constraintStart_toStartOf="@+id/v_opa_phy_03" />
+
+    <TextView
+        android:id="@+id/tv_opa_phy_08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_opa_phy_08"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_03"
+        app:layout_constraintEnd_toEndOf="@+id/v_opa_phy_03" />
+
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/v_opa_phy_01"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorPrimary"
+        app:indicator_color="@android:color/white"
+        app:indicator_interval="15dp"
+        app:indicator_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_opa_phy_02"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:max_value="0"
+        app:min_value="0"
+        app:notch_color="@android:color/white"
+        app:ruler_text_size="6sp" />
+
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/v_opa_phy_02"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorPrimary"
+        app:indicator_color="@android:color/white"
+        app:indicator_interval="15dp"
+        app:indicator_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/v_opa_phy_03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_opa_phy_01"
+        app:max_value="0"
+        app:min_value="0"
+        app:notch_color="@android:color/white"
+        app:ruler_text_size="6sp" />
+
+    <com.kevalpatel2106.rulerpicker.RulerValuePicker
+        android:id="@+id/v_opa_phy_03"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:background="@color/colorPrimary"
+        app:indicator_color="@android:color/white"
+        app:indicator_interval="15dp"
+        app:indicator_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/b_opa_phy_03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/v_opa_phy_02"
+        app:max_value="0"
+        app:min_value="0"
+        app:notch_color="@android:color/white"
+        app:ruler_text_size="6sp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

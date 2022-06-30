@@ -1,0 +1,27 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="#fff" />
+            <stroke android:color="#000" android:width="1dp"/>
+            <size android:width="20dp"/>
+            <corners android:topRightRadius="10dp" android:bottomRightRadius="10dp"
+                android:topLeftRadius="15dp" android:bottomLeftRadius="15dp"/>
+
+            <!--            <corners android:bottomLeftRadius="10dp" android:topLeftRadius="10dp"/>-->
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/ic_arrow_drop_down" android:gravity="end"
+        android:right="3dp"/>
+
+    <item android:right="60px">
+        <shape>
+            <padding android:left="3dp"/>
+            <solid android:color="#fff" />
+            <stroke android:color="#000" android:width="1dp"/>
+            <corners android:topLeftRadius="10dp" android:bottomLeftRadius="10dp"/>
+        </shape>
+    </item>
+
+</layer-list>
+

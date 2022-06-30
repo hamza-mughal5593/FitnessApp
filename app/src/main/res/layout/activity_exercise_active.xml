@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    >
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_circle"
+        android:tint="@color/colorIndigo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_aea_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/iv_aea_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_circle_white_outline_dark_grey"
+        android:padding="15dp"
+        android:src="@drawable/ic_menu"
+        android:tint="@color/colorDarkGrey"
+        app:layout_constraintStart_toEndOf="@+id/b_aea_stop"
+        app:layout_constraintTop_toTopOf="@+id/b_aea_stop" />
+
+    <Button
+        android:id="@+id/b_aea_stop"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_stop"
+        android:tint="@color/colorOrange"
+        android:background="@drawable/bg_rounded_big_black"
+        android:fontFamily="sans-serif-black"
+        android:text="STOP"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_aea_pause"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_pause"
+        android:tint="@color/colorOrange"
+        android:background="@drawable/bg_rounded_big_black"
+        android:fontFamily="sans-serif-black"
+        android:text="PAUSE"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_aea_resume"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_play"
+        android:tint="@color/colorOrange"
+        android:visibility="gone"
+        android:background="@drawable/bg_rounded_big_black"
+        android:fontFamily="sans-serif-black"
+        android:text="RESUME"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toStartOf="@+id/b_aea_stop" />
+
+    <Button
+        android:id="@+id/b_aea_close"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginBottom="32dp"
+        android:src="@drawable/ic_cancel"
+        android:tint="@color/colorOrange"
+        android:visibility="gone"
+        android:background="@drawable/bg_rounded_big_black"
+        android:fontFamily="sans-serif-black"
+        android:text="SAVING ACTIVITY"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_aea_list_active"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_circle_white_outline_dark_grey"
+        android:padding="10dp"
+        android:tint="#fff"
+        android:visibility="invisible"
+        android:src="@drawable/ic_walk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_aea_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/iv_aea_menu"
+        app:layout_constraintEnd_toEndOf="@+id/iv_aea_menu"
+        tools:layout_conversion_absoluteHeight="0dp"
+        tools:layout_conversion_absoluteWidth="200dp">
+
+        <ImageView
+            android:id="@+id/iv_aea_menu_01"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_circle_white_outline_grey"
+            android:padding="10dp"
+            android:src="@drawable/ic_route"
+            android:backgroundTint="@color/colorBlack"
+            android:tint="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_aea_menu_02"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_circle_white_outline_grey"
+            android:padding="10dp"
+            android:src="@drawable/ic_lock_screen"
+            android:tint="@color/colorDarkGrey"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="@+id/iv_aea_menu_01"
+            app:layout_constraintTop_toBottomOf="@+id/iv_aea_menu_01" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/b_aea_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_aea_01">
+
+        <TextView
+            android:id="@+id/tv_aea_pace_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="0&quot;0&apos;"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_aea_calories_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="0.0"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_aea_steps_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="0"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_aea_pace_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Avg. Pace"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_aea_distance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="KM"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_aea_distance_counter"
+            app:layout_constraintStart_toStartOf="@+id/tv_aea_distance_counter"
+            app:layout_constraintTop_toBottomOf="@+id/tv_aea_distance_counter" />
+
+        <TextView
+            android:id="@+id/tv_aea_calories_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Calories"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_aea_timer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="TIME"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_aea_timer_counter"
+            app:layout_constraintEnd_toEndOf="@+id/tv_aea_timer_counter"
+            app:layout_constraintStart_toStartOf="@+id/tv_aea_timer_counter" />
+
+        <TextView
+            android:id="@+id/tv_aea_timer_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="AVG SPEED"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_aea_speed_counter"
+            app:layout_constraintEnd_toEndOf="@+id/tv_aea_speed_counter"
+            app:layout_constraintStart_toStartOf="@+id/tv_aea_speed_counter" />
+
+        <TextView
+            android:id="@+id/tv_aea_timer_label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="DISTANCE"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_aea_distance_counter"
+            app:layout_constraintEnd_toEndOf="@+id/tv_aea_distance_counter"
+            app:layout_constraintStart_toStartOf="@+id/tv_aea_distance_counter" />
+
+        <TextView
+            android:id="@+id/tv_aea_steps_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="Steps"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_aea_speed_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="KM/H"
+            android:textColor="@color/colorBlack"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_aea_speed_counter"
+            app:layout_constraintStart_toStartOf="@+id/tv_aea_speed_counter"
+            app:layout_constraintTop_toBottomOf="@+id/tv_aea_speed_counter" />
+
+        <TextView
+            android:id="@+id/tv_aea_timer_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="00:00:00"
+            android:textColor="@color/colorBlack"
+            android:textSize="58sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_aea_speed_counter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_aea_speed_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="0.0"
+            android:textColor="@color/colorBlack"
+            android:textSize="78sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_aea_distance_counter"
+            app:layout_constraintEnd_toEndOf="@+id/tv_aea_timer_counter"
+            app:layout_constraintStart_toStartOf="@+id/tv_aea_timer_counter"
+            app:layout_constraintTop_toBottomOf="@+id/tv_aea_timer_counter" />
+
+        <TextView
+            android:id="@+id/tv_aea_distance_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="0.00"
+            android:textColor="@color/colorBlack"
+            android:textSize="58sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/tv_aea_speed_counter"
+            app:layout_constraintStart_toStartOf="@+id/tv_aea_speed_counter"
+            app:layout_constraintTop_toBottomOf="@+id/tv_aea_speed_counter" />
+
+        <TextView
+            android:id="@+id/tv_debug_lat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_debug_lon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_debug_lat" />
+
+        <TextView
+            android:id="@+id/tv_debug_acc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_debug_lon" />
+
+        <TextView
+            android:id="@+id/tv_debug_alt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_debug_acc" />
+
+        <TextView
+            android:id="@+id/tv_debug_counter"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_debug_alt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

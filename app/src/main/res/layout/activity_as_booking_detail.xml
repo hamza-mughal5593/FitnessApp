@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_6sdp"
+    tools:context=".v1.activity.AsadActivities.AsBookingDetailActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKING Details"
+        android:textAllCaps="true"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            >
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_border_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+
+                >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KOMPLEKS BELIA DAN SUKAN NEGERI SEMBILAN"
+                    android:textAllCaps="true"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/light_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.8">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:text="Faciliti"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:text="Unit"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/_11sdp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:text="Total (RM)"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/light_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+
+                        android:id="@+id/booking_detail_facility_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:listitem="@layout/booked_facilities_adapter_layout"
+                        tools:itemCount="2"
+
+                        />
+
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@color/light_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:text="Total (RM)"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:text="300.00"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </LinearLayout>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/light_gray" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_18sdp"
+                        android:text="Total Payment (RM)"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_14sdp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:text="300.00"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/backrel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/yello_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="@string/Come_back"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_11sdp" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop = "@dimen/_10sdp"
+                android:background ="@drawable/gray_border_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/_8sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transaction status"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/light_gray" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reference No:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_13sdp"
+
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/complex_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:text="#12345678"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+                        android:textStyle="bold"
+
+                        />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/light_yellow_bg"
+                    android:padding="@dimen/_10sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Booking Status:"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold"
+
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Waiting for payment"
+                                android:textColor="#987944"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold"
+
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="#987944" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Payment Status:"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/_12sdp"
+                                android:textStyle="bold"
+
+                                />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Payment pending"
+                                android:textColor="#987944"
+                                android:textSize="@dimen/_15sdp"
+                                android:textStyle="bold"
+
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_gravity="end"
+                    android:gravity="end">
+
+                    <RelativeLayout
+                        android:id="@+id/submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/blue_bg">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/_10sdp"
+                            android:text="Print a copy"
+                            android:textColor="#FFFFFF"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold"/>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

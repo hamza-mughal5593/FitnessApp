@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/complex_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/facility_image"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@drawable/backimage"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/facility_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:gravity="center"
+                android:text="Name"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+
+                />
+
+
+            <TextView
+                android:id="@+id/facility_nick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="(Name)"
+                android:textAllCaps="true"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KADAR"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+
+                android:id="@+id/day_per_hour_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sejam (Siang):"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/day_per_hour_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:text="RM 300.00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/night_per_hour_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sejam (Malam):"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/night_per_hour_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:text="RM 300.00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/day_rate_lin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sehari:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/facility_day_rate_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:text="RM 300.00"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/blue" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <RelativeLayout
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/blue_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Tempah Faciliti"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

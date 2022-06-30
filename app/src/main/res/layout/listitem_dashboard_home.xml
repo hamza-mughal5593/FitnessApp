@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#DDDADA"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_da_ef_li_01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/bg_06" />
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_black_bottom_only"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/tv_da_ef_li_01" />
+
+    <TextView
+        android:id="@+id/tv_da_ef_li_01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="8dp"
+        android:text="No item posted"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@+id/tv_da_ef_li_02"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintStart_toStartOf="@+id/view13" />
+
+    <TextView
+        android:id="@+id/tv_da_ef_li_02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:text="Look out for more items again later.."
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:singleLine="true"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="@+id/view13"
+        app:layout_constraintStart_toStartOf="@+id/view13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

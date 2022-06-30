@@ -1,0 +1,581 @@
+<resources>
+
+
+    <string name="map_key">AIzaSyAfWDWUfQ6jzD6aUBAUeaaKMZ65w8ZB1Es</string>
+    <string name="app_name">FitMY</string>
+
+
+    <string name="password">Password</string>
+    <string name="gorgot_password">Forgot Password ?</string>
+    <string name="email_hint">Enter Email</string>
+    <string name="facility_list">Sign Up</string>
+    <string name="Mandatory_Room">Mandatory Room</string>
+    <string name="password_hint">Enter Password</string>
+    <string name="User_Type">User Type</string>
+    <string name="Category_Type">Category Type</string>
+    <string name="User">User</string>
+    <string name="Civil_servants">Civil servants</string>
+    <string name="User_ID">User ID</string>
+    <string name="Password">Password</string>
+    <string name="Enter_Password">Enter Password</string>
+    <string name="Enter_the_same_Password">Enter the same Password</string>
+    <string name="Confirm_password">Confirm password</string>
+    <string name="Email">Email</string>
+    <string name="bd">Date of Birth</string>
+    <string name="Enter_your_email">Enter your email</string>
+    <string name="birthday">Enter date of birth</string>
+    <string name="Full_name">Full name</string>
+    <string name="Enter_your_full_name">Enter your full name</string>
+    <string name="Gender">Gender</string>
+    <string name="Nation">Nation</string>
+    <string name="Citizenship">Citizenship</string>
+    <string name="No_phone_number">Phone Number</string>
+    <string name="Enter_the_phone_number">Enter the phone number</string>
+    <string name="Office_Tel_No">Office Tel No</string>
+    <string name="Enter_the_Office_Phone_Number">Enter the Office Phone Number</string>
+    <string name="Office_Fax_No">Office Fax No</string>
+    <string name="Latest_Alamas">Recent Address</string>
+    <string name="adress_hint">Enter your Recent Address</string>
+    <string name="Enter_the_Office_Fax_No">Enter the Office Fax No</string>
+    <string name="Enter_Recent_Address">Enter Recent Address</string>
+    <string name="Zip_code">Zip code</string>
+    <string name="Enter_the_area_zip_code">Enter the area zip code</string>
+    <string name="City">City</string>
+    <string name="Enter_the_City_Name">Enter the City Name</string>
+    <string name="State">State</string>
+    <string name="Negative">Negative</string>
+    <string name="Country">Country</string>
+    <string name="Come_back">Back</string>
+    <string name="agree">I agree with you</string>
+    <string name="trems_and_conditions">Terms and conditions</string>
+    <string name="latest">The latest</string>
+    <string name="hieght">Height</string>
+    <string name="wieght">Weight</string>
+    <string name="hieght_hint">Height in cm</string>
+    <string name="wieght_hint">Weight in kg</string>
+    <string name="date">Date</string>
+    <string name="location">Location</string>
+
+
+    <string name="tv_ia_01">PREV</string>
+    <string name="tv_ia_02">NEXT</string>
+
+    <string name="tv_ia_p01_01">WELCOME</string>
+    <string name="tv_ia_p01_02">TO</string>
+    <string name="tv_ia_p01_03">FIT MALAYSIA APP</string>
+
+    <string name="tv_ia_p02_01">LIVE HEALTHIER</string>
+    <string name="tv_ia_p02_02">Performing exercise such as walking, running and cycling for healthy body and mind.</string>
+
+    <string name="tv_ia_p03_01">TRACK YOUR EXERCISE</string>
+    <string name="tv_ia_p03_02">Keep track of your daily activities easily and accurately. Improve your lifestyle by reaching your daily and weekly goals.</string>
+
+    <string name="tv_ia_p04_01">COLLECT AND REDEEM REWARD</string>
+    <string name="tv_ia_p04_02">Collect FitPoint and redeem exciting gifts and vouchers</string>
+
+    <string name="tv_ia_p05_01">BOOK FACILITIES</string>
+    <string name="tv_ia_p05_02">Book sports facilities using your FitPoints</string>
+
+    <string name="tv_sa_01">LETS START LIVING FIT</string>
+    <string name="tv_sa_02">Are you...</string>
+
+    <string name="b_sa_01">Sign Up</string>
+    <string name="b_sa_02">Log In</string>
+
+    <string name="activity">Activity</string>
+    <string name="news">News</string>
+    <string name="gallery">Gallery</string>
+    <string name="music">Music</string>
+    <string name="profil">Profile</string>
+    <string name="walk">Walking</string>
+    <string name="run">Running</string>
+    <string name="cycle">Cycling</string>
+    <string name="hike">Hiking</string>
+    <string name="stairs">Stairs Climbing</string>
+    <string name="indoor_run">Indoor Running</string>
+    <string name="aerobic">Aerobic</string>
+    <string name="swim">Swimming</string>
+    <string name="sleep">Sleep</string>
+
+
+    <string name="tv_opa_pfl_01">PROFILE</string>
+    <string name="tv_opa_pfl_02">Introduce yourself</string>
+    <string name="tv_opa_pfl_03">Full Name</string>
+    <string name="tv_opa_pfl_04">Nick Name</string>
+    <string name="tv_opa_pfl_05">State</string>
+    <string name="b_opa_pfl_01">NEXT</string>
+    <string name="et_opa_pfl_01">Iman Danial</string>
+    <string name="et_opa_pfl_02">Danial</string>
+
+    <string name="tv_opa_phy_01">PHYSICAL</string>
+    <string name="tv_opa_phy_02">Your BMI</string>
+    <string name="b_opa_phy_03">Start</string>
+    <string name="tv_opa_phy_03">Birth Year</string>
+    <string name="tv_opa_phy_04">0</string>
+    <string name="tv_opa_phy_05">Weight</string>
+    <string name="tv_opa_phy_06">0 kg</string>
+    <string name="tv_opa_phy_07">Height</string>
+    <string name="tv_opa_phy_08">0 cm</string>
+
+    <string name="profile">My Profile</string>
+    <string name="name">Full Name</string>
+    <string name="nick_name">Nick Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">Email Address</string>
+    <string name="hight">Height</string>
+    <string name="weight">Weight</string>
+    <string name="birth">Birth Year</string>
+    <string name="gender">Gender</string>
+    <string name="nationality">Nationality</string>
+    <string name="country">Country</string>
+    <string name="language">Language</string>
+    <string name="signout">Sign Out</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="tv_lpa_01">Welcome Back!</string>
+    <string name="tv_lpa_02">Please sign-in to continue</string>
+    <string name="tv_lpa_03">Phone Number</string>
+    <string name="tv_lpa_04">Have problems?</string>
+    <string name="tv_lpa_05">Contact Us</string>
+    <string name="tv_lpa_06">Term &amp; Condition</string>
+    <string name="tv_lpa_07">Privacy Policy</string>
+    <string name="b_lpa_01">GO</string>
+    <string name="tv_lpa_08">Sorry your phone number is not in our record</string>
+
+    <string name="tv_lta_01">OTP Number has been sent to your phone via SMS. Insert the 6 digit OTP Number below</string>
+    <string name="tv_lta_02">Did not receive OTP?</string>
+    <string name="tv_lta_03">Resend in 3:25 minutes</string>
+
+    <string name="tv_rda_01">300</string>
+    <string name="tv_rda_00">ƒ</string>
+    <string name="tv_rda_02">CLICK TO REDEEM</string>
+    <string name="tv_rda_02_01">NOT AVAILABLE</string>
+    <string name="tv_rda_02_02">INSUFFICIENT POINT</string>
+    <string name="tv_rda_03">Tealive</string>
+    <string name="tv_rda_05">24 days left</string>
+    <string name="tv_rda_08">Description</string>
+    <string name="tv_rda_09">Tealive Malaysia</string>
+    <string name="tv_rda_10"><![CDATA[Terms & Conditions]]></string>
+    <string name="tv_rda_11">1. This coupon only valid with 1 item purchases from a single outlet.\n2. This coupon can’t be traded for actual currency\n3. The use of this coupon is strictly for FitMY app users only.\n4. Do not misused or resell this coupon.</string>
+
+    <string name="tv_rra_01">TextView</string>
+    <string name="tv_rra_02">TextView</string>
+    <string name="b_rra_02">DONE</string>
+
+    <string name="b_da_ef_li_01">MORE</string>
+    <string name="tv_da_ef_li_01">FUN RUN (5KM)</string>
+    <string name="tv_da_ef_li_02">Kampung Dusun, Sementah</string>
+    <string name="tv_da_ef_li_04">20 Nov 2019</string>
+
+    <string name="b_da_rf_li_01">REDEEM</string>
+    <string name="tv_da_rf_li_02">RM1.00 for second cup...</string>
+    <string name="tv_da_rf_li_03">300</string>
+    <string name="tv_da_rf_li_01">Tealive</string>
+    <string name="tv_da_rf_li_00">ƒ</string>
+
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <string name="b_lpa2_01">CONTINUE</string>
+    <string name="tv_lpa2_01">PREFERRED LANGUAGE</string>
+    <string name="tv_lpa2_02">Please choose your language</string>
+
+    <string-array name="s_opa_01">
+        <item>Selangor</item>
+        <item>WP Kuala Lumpur</item>
+        <item>WP Putrajaya</item>
+        <item>Johor</item>
+        <item>Sarawak</item>
+        <item>Sabah</item>
+        <item>Penang</item>
+        <item>Perak</item>
+        <item>Pahang</item>
+        <item>Negeri Sembilan</item>
+        <item>Kedah</item>
+        <item>Malacca</item>
+        <item>Terengganu</item>
+        <item>Kelantan</item>
+        <item>WP Labuan</item>
+        <item>Perlis</item>
+    </string-array>
+
+    <string-array name="s_lpa2_01">
+        <item>Bahasa Malaysia</item>
+        <item>English</item>
+    </string-array>
+
+    <string name="tnc">Privacy Policy\n\nProtecting your privacy is important to us. We hope the following statement will help you understand how our app deals with the personal identifiable information (\'PII\') you may occasionally provide to us via Internet (the Google Play Platform).\n\nGenerally, we do not collect any PII from you when you download our Android applications. To be specific, we do not require the consumers to get registered before downloading the application, nor do we keep track of the consumers\' visits of our application, we even don\'t have a Server to store such PII.\n\nInformation we collect\nCookies ( Webview browser cookies) - When you visit Forum service, we may send one or more cookies ? files with small amount of data that is commonly used an anonymous unique identifier ?to your mobile device that uniquely identifies your device and allows the application to help you log in faster and enhance your navigation through the Forum. You can reset your web browser to refuse all cookies or to indicate when a cookie is being sent. If you choose to refuse our cookies, you may not be able to use some portions of this Service.\n\nAds - Our app may uses Facebook as ads provider. Facebook uses cookies (as described above) to make it possible to analyze how users use Our Services, and show ads that are relevant to you. For more information, please check https://m.facebook.com/ads/ad_choices.\n\nAnalytics - We use third party analytics tool, Google Analytics, to help us measure traffic and usage trends for the service. Google Analytics collects information such as how often users visit our services, what pages they visit when they do so, and what other pages they use prior to coming to our services. We use the information get from Google Analytics only to improve our services.\n\nHealth Kit- You will also have an option to permit us to import health data into the App from third-party services such as Google Fit. Permitting us to access third party information can help you to maximize your App experience, and we will handle any such third-party information in accordance with this Privacy Policy.\n\nLog file - The only situation we may get access to your PII is when you personally decide to email us your feedback or to provide us with a bug log report. The PII we may get from you in that situation are strictly limited to your name, email address, device information, location Information and your survey response only.\n\nHow we use your information\nIn above situation, we guarantee that your PII will only be used for conOTPting you and improving our services. We will never use such information (e.g. your name and email address) for any other purposes, such as to further market our products, or to disclose your personal information to a third party for commercial gains.\n\nConOTPt us\nIt should be noted that whether or not to send us your feedback or bug report is a completely voluntary initiative upon your own decision. If you have concern about your PII being misused, or if you want further information about our privacy policy and what it means, please feel free to email us at kem.beliadansukan@gmail.com, we will endeavor to provide clear answers to your questions in a timely manner.</string>
+    <string name="tv_nav_home">Home</string>
+    <string name="tv_nav_fitness">Profile</string>
+    <string name="tv_nav_reward">Reward</string>
+    <string name="tv_nav_event">Event</string>
+    <string name="tv_nav_booking">Booking</string>
+
+    <string name="tv_home_001">News &amp; Promotions</string>
+    <string name="tv_home_002">Nearby Event &amp; Programs</string>
+    <string name="tv_home_003">Community News</string>
+
+    <string name="tv_home_004a">Record</string>
+    <string name="tv_home_004b">Activities</string>
+    <string name="tv_home_005a">Join</string>
+    <string name="tv_home_005b">Event</string>
+    <string name="tv_home_006a">Book</string>
+    <string name="tv_home_006b">Facilities</string>
+    <string name="tv_home_007a">Redeem</string>
+    <string name="tv_home_007b">Rewards</string>
+    <string name="tv_fitness_001">FITNESS DIARY</string>
+    <string name="tv_fitness_002">Kilometer</string>
+    <string name="tv_fitness_003">Calorie</string>
+    <string name="tv_fitness_004">Total Steps</string>
+    <string name="tv_fitness_005">GPS Tracking</string>
+    <string name="tv_fitness_006">Fitness Activity</string>
+    <string name="tv_fitness_007">Start</string>
+    <string name="tv_fitness_008">Height</string>
+    <string name="tv_fitness_009">Weight</string>
+    <string name="tv_fitness_010">Exercise</string>
+    <string name="tv_fitness_011">Minutes</string>
+
+    <string name="tv_af_steps_label2">Steps</string>
+    <string name="tv_af_steps_label5">Calorie</string>
+    <string name="tv_af_steps_label3">Distance</string>
+    <string name="tv_af_steps_label4">Heart</string>
+    <string name="tv_af_steps_label6">Sleep</string>
+
+    <string name="tv_reward_001">REDEEM REWARDS</string>
+    <string name="tv_reward_002">Choose reward to redeem</string>
+    <string name="tv_reward_003">Rewards</string>
+    <string name="tv_reward_004">History</string>
+
+    <string name="tv_event_001">Search</string>
+    <string name="tv_event_002">Event &amp; Programs</string>
+    <string name="tv_event_003">History</string>
+
+    <string name="coming_soon">Coming soon...</string>
+
+    <string name="January">January</string>
+    <string name="February">February</string>
+    <string name="March">March</string>
+    <string name="April">April</string>
+    <string name="May">May</string>
+    <string name="Jun">Jun</string>
+    <string name="July">July</string>
+    <string name="August">August</string>
+    <string name="September">September</string>
+    <string name="October">October</string>
+    <string name="November">November</string>
+    <string name="December">December</string>
+
+
+    <string-array name="months_spin">
+
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>April</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+
+    </string-array>
+    <string-array name="s_booking_001">
+        <item>Per Hour</item>
+        <item>Per Day</item>
+    </string-array>
+
+    <string-array name="s_ab_state">
+        <item>WP Kuala Lumpur</item>
+        <item>WP Putrajaya</item>
+        <item>WP Labuan</item>
+        <item>Perlis</item>
+        <item>Kedah</item>
+        <item>Selangor</item>
+        <item>Johor</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Melaka</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Perak</item>
+        <item>Kelantan</item>
+        <item>Terengganu</item>
+        <item>Pulau Pinang</item>
+    </string-array>
+
+    <string-array name="s_abr_jenis_pengguna">
+        <item>Public Users</item>
+    </string-array>
+
+    <string-array name="Mali">
+        <item>MALAYSIA</item>
+        <item>CHINA</item>
+        <item>JAPAN</item>
+    </string-array>
+
+    <string-array name="s_abr_jenis_kategori">
+        <item>Civil servants</item>
+        <item>Statutory body</item>
+        <item>Private</item>
+        <item>Registered Associations</item>
+        <item>Lain-Lain</item>
+    </string-array>
+
+    <string-array name="s_abr_gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="s_abr_race">
+        <item>Malay</item>
+        <item>Chinese</item>
+        <item>India</item>
+        <item>Miscellaneous</item>
+    </string-array>
+
+    <string-array name="s_abr_nationality">
+        <item>Citizens</item>
+        <item>Non-citizen</item>
+    </string-array>
+
+    <string-array name="s_abr_country">
+        <item>Malaysia</item>
+    </string-array>
+
+    <string-array name="s_abs_jenis_kadar">
+        <item>Per Hari</item>
+        <item>Per Jam</item>
+    </string-array>
+
+
+    <string-array name="user_type">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+
+    <string-array name="vanue">
+
+        <item>Abc</item>
+        <item>Abc</item>
+        <item>Abc</item>
+
+    </string-array>
+
+
+
+
+
+    <string-array name="faciltiy">
+
+        <item>Faciltiy-A</item>
+        <item>Faciltiy-B</item>
+        <item>Faciltiy-c</item>
+
+    </string-array>
+
+
+    <string-array name="category_type">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <string-array name="nation">
+        <item>Malaysian</item>
+        <item>Malaysian</item>
+
+    </string-array>
+
+    <string-array name="Citizenship">
+        <item>Permanent</item>
+        <item>Temporary</item>
+
+    </string-array>
+
+
+    <string-array name="stateee">
+
+        <item>State_A</item>
+        <item>State_B</item>
+        <item>State_C</item>
+
+    </string-array>
+
+
+    <string-array name="city">
+
+        <item>City_A</item>
+        <item>City_B</item>
+        <item>City_C</item>
+
+    </string-array>
+
+
+    <string-array name="rate_type">
+
+        <item>Per Jam</item>
+        <item>Per hari</item>
+
+    </string-array>
+
+    <string-array name="s_abs_bil_unit_tempahan">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+    <string-array name="paymnet_methods">
+        <item>Financial Process Exchange (FPX)</item>
+        <item>Cash-Complex counter</item>
+    </string-array>
+
+    <string name="term_heading">Terms and Conditions: Payment Reservation (Discount)</string>
+    <string name="term_and_condition">1.Any booking fee is as stated. \n2.   Any facility booking for Discount can only be made by cash at Counter Complex. \n 3.   Any facility booking for Discount can only be made by cash at Counter Complex.</string>
+    <string name="load_devices">Reload Devices</string>
+    <string name="initialization_error">Failed to initalize the SDK.\n</string>
+    <string name="service_unavailable">The ConnectIQ service is unavailabe.</string>
+    <string name="tap_to_send">Tap message below to send to device.</string>
+    <string name="open_app_open">Tap here to open the Comm app on the device.</string>
+    <string name="open_app_already_open">The Comm app is already open on the device.</string>
+    <string name="received_message">Received message from device.</string>
+
+    <string name="hello_world_message">Hello World!</string>
+    <string name="short_string_message">Hi</string>
+    <string name="medium_string_message">Why hello there, good world! This is a medium-length string.</string>
+    <string name="long_string_message">Lorem ipsum dolor sit amet, the first of the epicuri luptatum, but his command of a part of being tedious,, or. How to judge the strength of a great force but rejected. First, as I am doing an animal of Epicurus, for it is in Latin, with the all the pleasures of the. It seemed to say, but it can hardly ullamcorper wise, and he understands the power of pain. No it is the top of an animal at the bar, at the individual could hardly disagree, with the id congue Theophrastus. It was from the ever molested, I, and the labor of honey.</string>
+    <string name="absurd_message">Lorem ipsum dolor sit amet, consectetur adipiscing elit. For long ultricies. Each sterilized, but the players from the employee. But there was not even iaculis commodo dignissim. Aenean fermentum diam, fringilla vehicula orci. Donec quis lorem velit urna metus. Mauris weekend live carrots, throat region who sorted networks. Nam author at libero. Homework time that pain and arrows. Live large salad, sauce and lakes, but always worth now. In rutrum nulla, vel interdum vel egestas dictum massa mauris dictum justo, quis viverra neque felis ut augue. In the United States of dui ac members. Present hatred of life, of life arcu luctus imperdiet. The ends of the Phasellus venenatis the basis of the now, and the element of the sapien aliquam. Even volleyball developers environment is not the throat. For the manufacturing and girls as members of the airline. Proin ut venenatis orci, volutpat neque, neither. Integer eros or a smile or a realtor ever. Integer eleifend blandit ornare mauris id odio. In nec dui some of them, so that the mass of pillow, soft, my. Mauris is now. Reserved and now becomes the functional protein. Sit amet, varius urna quam, eget tristique magna fringilla id. Each lot of consumer fears sometimes sit skirt. At a layer networks. Sometimes they malesuada hunger and at the first taste. Moors now now, sometimes there is no time to, antioxidants or a peanut. Curabitur elit turpis elit, is always the life of the throat. Donec sed diam antioxidants, porttitor urna vitae, interdum sapien. Now or affiliate lion and clinical care at fermentation. Lorem the microwave, it is now or developers, members of law enforcement. Present sem augue, to have some vulputate cursus quis, dapibus quis nisl. Jasmine tincidunt football developers makeup. The author of a great Aenean ultricies eget tempor. Class began Employment twist by our marriage, per himenaeos. That boat mass diameter. Even at this very ends of the basketball but football is pregnant. Clinical pot but will move from the couch or the soft carrots. Live my first time to stress that a lot, Parameters of the bed. Nulla.Was a great man a very great from the morbi eget nisl non nibh. There can not be out of the kids. And in front of a great Maecenas malesuada vestibulum, velit urna, except the porch. Great football betting at the ends of pain running from the ecological environment. Even now the biggest cartoon film. There is no drink, tortor ac ultrices pulvinar, a great son, tristique tellus, sed mattis sem tempus vitae turpis and with thy bow. Reserved macro photography until the sauce asset. And a mass sit at a mass element, but not now. Fusce the region, football takes photography and developer. Tomorrow any mass but no bananas sad need a lot ante. The mass pillow and clinical orange skirt. Each eu always had a lot of antioxidants just eu. Lorem biggest players in the real estate relay, but it takes time. In fact, but of some more competition, who has his quiver, my. Gluten. Tomorrow protein or sapien no bananas. Performance of a skirt. Ultricies is not until the deductible and sit lorem products. No developers and the land mass football, football Default author. For ac posuere very important. Before the very first basketball set their jaws grief and clinical care; Nutrition residents soccer sad old and ugly netus et malesuada hunger and poverty. Quisque porttitor, the gate of the bow and the quiver, the porch out of the earth itself, and from the mass of said tortor mauris placerat. Listing more than worth it. Maecenas platforms and just put chocolate. Tomorrow money to save or developers. A massage, earth and enhanced protein, high school sapien was hated, carrots yeast from the developer at diam. The refinancing. To drink quiver bananas. Reserved jasmine sauce entrepreneurs, but the author is always at television. Jasmine care or propaganda, but at the convenience football. Mauris massa tortor, mollis posuere nisi of life, when it becomes volutpat odio. Boat passes nutrition propaganda, propaganda that Vulputate or sauce. The latest batteries drop, but the manufacturing therapy. Why does not mauris augue. But football carton great. Bureau Bureau recommended drink is an asset. However, even if not great. Mauris developers airline. Planning diam present, magna but I do not care. The relay television set hate mourning weekend. For the skirt players or members of the set. Eget et dapibus sagittis Aliquam nulla. How protein salad agency, set by the consumer Bureau deductible. Chat football football lorem need poverty. In condimentum mauris Vivamus venenatis, felis porttitor of life is brought about that. Until the carton on your computer screen. It also needs to trigger element sauce. Homework price now need the time. Sed dui or a lion. In order to improve your smile outdoor football will always care. Raikkonen\'s WRC may be complicated life interdum sollicitudin ante. Eu homework sit hate carrots fermentation. Each protein basketball fears sem me to sit. But at dui vitae receive the varied and football game. Until we invest a lot of propaganda quiver vehicles. In fact, ut turpis ultricies convallis mauris, volutpat imperdiet eros viverra. Even players, the chocolate layer at carrots, one of the element. Mauris venenatis congue sapien lacus. Nam and Japan players. Japan trigger until the football, that nibh. The Bureau arc anyone just sit varius need freedom. There is no need large vehicles nutrition nibh leo temperature. But as the Bureau of Medicine, which set lorem. Mauris members recommended that the price of airline. A large integer risus, lacinia nec lorem eu, mattis turpis. Proin aliquam turpis velit, who shall placerat felis sollicitudin at. Clinical sauce, which sometimes need lorem, and multimedia pot fermentation. Quisque elit arcu, laoreet tempus id, blandit vehicula mauris. Class began Employment twist by our marriage, per himenaeos. Nullam mauris mauris, vel interdum sollicitudin id, tincidunt suscipit lectus. Planning marketers who want a lot of laughter. When Pulls Rays Super Bowl mountains instantly. Kids need to present fears soft pillow. At that neither laughter. Chat mass was a tanker need protein, throat Textile laughter. Jasmine financing any consumer convenience pillow. Live yeast sometimes innovative lay in diameter.</string>
+
+    <string name="hello_world">Hello World</string>
+    <string name="short_string">Short String</string>
+    <string name="medium_string">Medium String</string>
+    <string name="long_string">Long String</string>
+    <string name="absurd_string">Absurd String</string>
+    <string name="array">Array of Values</string>
+    <string name="dictionary">Dictionary of Values</string>
+    <string name="complex">Complex Data Type</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="missing_widget">Missing Comm Widget</string>
+    <string name="missing_widget_message">The Comm Widget used with this application is not installed on your ConnectIQ device.   Please install the widget and try again.</string>
+    <string name="titile_forgot">Forgot password</string>
+    <string name="txt_forgot">Forgot password ?</string>
+
+    <string name="title1">SOCIAL SERVICES - GOTONG ROYONG GIVES THE REST OF THE REST</string>
+    <string name="desp1">January 11, 2020 (Saturday) - The Community Service Component has been successfully implemented at Kg Islamic Cemetery. River Bertam, Batang Kali on Saturday, January 11, 2020. \ n
+    Attendance of freshmen during the 1/2020 session and about 125 staff members worked together to clear the cemetery from 7.30am. Among the voluntary activities carried out were packing in and out of the As Sajidin Mosque, collecting twigs and decaying branches, cleaning clams and wiping dried leaves around the area.
+    \ nWe are here to help with this partnership The Mosque Committee has donated breakfast to the students of the IKBN Printers and the local community. \ N
+    This program is the final slot in the IKBN Printer Session 1/2020 Session Week Program in the hope that students can foster a sense of cooperation and enhance their future volunteer work. \ N
+    Provided by: Mrs. Azini Binti Ismail</string>
+
+    <string name="title2">PACKAGING PROGRAM FOR ALL PATTERN</string>
+    <string name="desp2">January 9, 2020 (Thursday) - The National Youth Skills Institute (IKBNPT) has organized a Bukit Batu Pahat Tracking Program involving 78 IKBPT staff and staff together with 104 new January 2020 students.</string>
+
+    <string name="title3">SELAMAT DATANG PELAJAR BARU KE IKBN PERETAK BAGI SESI 1/2020</string>
+    <string name="desp3"> IKBN Peretak, 6 Januari 2020 (Isnin) – Hari Pendaftaran bagi pelajar-pelajar baru Sesi 1/2020 ILKBS telah diadakan pada 6 Januari 2020 (Isnin). Sebanyak 6 bidang SKM dan 1 Bidang Diploma telah ditawarkan oleh IKBN Peretak pada Sesi 1/2020 ini iaitu bagi bidang:\n
+    1. Sijil Lanjutan Teknologi Terapi Kecantikan\n2. Sijil Lanjutan Teknologi Perekaan Gaya Rambut\n3. Sijil Lanjutan Teknologi Penyediaan Roti\n
+        4. Sijil Lanjutan Teknologi Penyediaan Pastri\n5. Sijil Lanjutan Teknologi Penyajian Makanan &amp; Minuman\n6. Sijil Lanjutan Teknologi Jahitan Pakaian Wanita\n
+        7. Diploma Rekaan Fesyen\nPada tegaharinya telah diadakan sesi taklimat kepada ibu-bapa/penjaga pelajar baru oleh Pengarah IKBN Peretak sempena Pendaftaran pelajar baru Sesi pengambilan Januari, 2020.\n
+        Selamat datang kepada semua pelajar baru ke IKBN Peretak bagi Sesi 1/2020. Semoga cita-citamu akan tercapai.
+</string>
+
+    <string name="title4">LAWATAN MENGEJUT DARIPADA KSU DAN TKSU STRATEGIK, KEMENTERIAN BELIA DAN SUKAN (KBS)</string>
+    <string name="desp4">31 Disember 2019 (Selasa), IKBN Peretak – IKBN Peretak berbesar hati menerima lawatan mengejut daripada YBrs Dr. Waitchalla R.R Suppiah (KSU KBS) &amp; Pn. Ramona binti Mohd. Razali (TKSU Strategik). KSU dan TKSU (S) sempat meluangkan masa melawat Dewan DAHA, butik dan bengkel projek inkubator Jabatan Tekstil, Perpustakaan, Pejabat Pentadbiran, kawasan chalet, kuarters dan pejabat AKBG.\n
+    Beberapa isu yang telah dibangkitkan kepada Dr KSU &amp; Pn.TKSU (S) adalah ketiadaan sistem pengudaraan dan pencahayaan yang baik di Dewan DAHA, masalah talian telefon dan Wifi serta sistem penggera kebakaran yang perlu dibaiki. Sesi lawatan bermula pada jam 10.00 pagi dan selesai sekitar jam 11.15 pagi.</string>
+    <string name="notice">Notice</string>
+    <string name="msg_perm_acquired">All permissions should be acquired</string>
+    <string name="msg_conn_not_available">Connection with Samsung Health is not available</string>
+    <string name="msg_req_install">Please install Samsung Health</string>
+    <string name="msg_req_upgrade">Please upgrade Samsung Health</string>
+    <string name="msg_req_enable">Please enable Samsung Health</string>
+    <string name="msg_req_agree">Please agree to Samsung Health policy</string>
+    <string name="msg_req_available">Please make Samsung Health available</string>
+    <string name="text1">Likewise lorem carrots, enhanced undergraduate developer, but the time and vitality,, so that the labor and sorrow, some important things to do eiusmod. Over the years, I will come, who will nostrud aliquip out of her the advantage of exercise, so that stimulus efforts if the school district and longevity. Want to be a pain in the cupidatat cillum has been criticized in the Duis et dolore magna flee produces no resultant pleasure. Excepteur cupidatat blacks are not excepteur, is soothing to the soul, that is, they deserted the general duties of those who are to blame for your troubles.</string>
+    <string name="search_word_meaning_dialog_title">Select SDK</string>
+
+
+    <string name="password_empty">Password is empty</string>
+    <string name="pass_length">Password must at least 8 digit</string>
+    <string name="confirm_password_empty">Confirm password is empty</string>
+    <string name="password_not_matched">Password not matched</string>
+    <string name="email_empty">Email is empty or invalid</string>
+    <string name="name_empty">Name is empty</string>
+    <string name="phone_empty">Phone Number is empty</string>
+    <string name="birthday_empty">Date of birth is empty</string>
+    <string name="empty_term">You have not agreed with our terms and conditions</string>
+    <string name="hieght_empty">Height is empty</string>
+    <string name="complete_actitvity">Complete your activity first to go back</string>
+    <string name="activity_type">Select activity type</string>
+
+    <string name="comming_soon">Comming Soon</string>
+    <string name="wait">Wait...</string>
+    <string name="weight_emp">Weight is empty</string>
+    <string name="registered">Registered Successfully</string>
+    <string name="email_error_registered">Email already registered!</string>
+    <string name="naionality_empty">Nationality is empty</string>
+    <string name="address_empty">Address is empty</string>
+    <string name="profile_success">Profile Updated Successfully</string>
+    <string name="same_location">You are at same location</string>
+    <string name="login_success">Login Success</string>
+    <string name="reward_purchased">Congratulation!, You Purchased That Reward!</string>
+    <string name="no_data">No Data Found!</string>
+    <string name="no_location_data">No Location data for this activity</string>
+    <string name="walking">Walking</string>
+    <string name="All_Rewards">Rewards</string>
+    <string name="history">History</string>
+    <string name="fitpoint">FitPoint:</string>
+    <string name="all_faciliteis">All Facilities</string>
+    <string name="Booking_History">Booking History</string>
+    <string name="Operating_Hour">Operating Hour</string>
+    <string name="Address">Address</string>
+    <string name="login">Log in</string>
+    <string name="NRIC_Number">NRIC Number</string>
+    <string name="simple_Password">Password</string>
+    <string name="booking_signup">Sign up for an Account</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="rate_type">Rate Type</string>
+    <string name="no_of_users">Number of Users</string>
+    <string name="reservation_unit">No. Reservation Unit</string>
+    <string name="amount">Amount: RM</string>
+    <string name="book">BOOK</string>
+    <string name="list_of_resources">LIST OF RESOURCES</string>
+    <string name="facility">Facility</string>
+    <string name="sub_total">Sub - Total (RM)</string>
+    <string name="discount">Discount (RM)</string>
+    <string name="total_paymnet">Total Payment (RM)</string>
+    <string name="add">ADD</string>
+    <string name="reduce">DISCOUNT</string>
+    <string name="pay">PAY</string>
+    <string name="zip_code">Zip code</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="countryyyy">Country</string>
+    <string name="error_message">Please fill in all the boxes to sign up</string>
+    <string name="term">Terms and Conditions</string>
+    <string name="Iagree">I Agree</string>
+    <string name="cash">Cash</string>
+    <string name="fpx">FPX (Payment)</string>
+    <string name="year">Select Year</string>
+    <string name="month">Select Month</string>
+    <string name="category">Select Category</string>
+    <string name="update_profile">Update Profile</string>
+
+    <string name="later_message">Payment must be made within 3 days of the booking date being made. If payment is not received within that time, the system will automatically cancel.</string>
+    <string name="signup_message">An email has been sent to the registered email address. Please open and click the link to activate your account.</string>
+
+</resources>

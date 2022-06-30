@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main_layout"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box001"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+
+            <ImageView
+                android:id="@+id/news_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:padding="@dimen/_8sdp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/reward_icon" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/news_titile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.7"
+                        android:singleLine="true"
+                        android:text="e-Fasiliti"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:layout_marginEnd="@dimen/_3sdp"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/news_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bf_li_01"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="12dp"
+                android:text="descriptionnnnnnnnn"
+                android:layout_toEndOf="@+id/iv_bf_li_01"
+                android:lines="2"
+                android:textColor="#000"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_da_ef_li_01"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="8dp"
+        android:text="No item posted"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:id="@+id/tv_da_ef_li_02"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center_vertical"
+        android:text="Look out for more items again later.."
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:singleLine="true"
+        />
+
+</RelativeLayout>

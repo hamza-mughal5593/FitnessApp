@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:id="@+id/main_layout"
+
+    >
+    <LinearLayout
+        android:id="@+id/v_ae_exercise"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/bg_rounded_white_outline_grey"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/event_cat_image"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:tint="#000"
+            android:src="@drawable/ic_esport" />
+
+        <TextView
+            android:id="@+id/event_cat_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="E-Sport"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

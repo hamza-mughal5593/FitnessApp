@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".v1.activity.fitness.FitnessDetailsActivity">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/v_dashboard"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/b_aea_stop"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_rounded_big_black"
+        android:fontFamily="sans-serif-black"
+        android:text="STOP"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_aea_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_circle_white_outline_dark_grey"
+        android:padding="15dp"
+        android:src="@drawable/ic_menu"
+        android:tint="#fff"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@+id/b_aea_stop"
+        app:layout_constraintTop_toTopOf="@+id/b_aea_stop" />
+
+    <ImageView
+        android:id="@+id/iv_aea_list_active"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_circle_white_outline_dark_grey"
+        android:padding="10dp"
+        android:tint="#fff"
+        android:src="@drawable/ic_walk"
+        app:layout_constraintStart_toEndOf="@+id/b_aea_close"
+        app:layout_constraintTop_toTopOf="@+id/b_aea_close" />
+
+    <ImageView
+        android:id="@+id/b_aea_close"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_circle_white_outline_dark_grey"
+        android:padding="15dp"
+        android:tint="#fff"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_aea_pace_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="0.0"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aea_pace_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/v_dashboard"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_aea_distance_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="0.0"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_aea_pace_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_aea_pace_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_calories_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="0.0"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_distance_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_distance_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_aea_speed_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_timer_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="00:00:00"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_aea_pace_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_aea_pace_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_steps_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="0"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_timer_label"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_timer_label"
+        app:layout_constraintTop_toTopOf="@+id/tv_aea_speed_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_pace_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Avg. Pace"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aea_speed_counter"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_pace_counter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_pace_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aea_pace_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_distance_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Kilometers"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aea_speed_counter"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_distance_counter"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_distance_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aea_pace_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_calories_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Calories"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_calories_counter"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_calories_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aea_calories_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_timer_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Timer"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aea_speed_counter"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_timer_counter"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_timer_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aea_pace_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_steps_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Steps"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_steps_counter"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_steps_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aea_steps_counter" />
+
+    <TextView
+        android:id="@+id/tv_aea_speed_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="0.0"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_aea_speed_label"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_pace_counter"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_pace_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aea_pace_label" />
+
+    <TextView
+        android:id="@+id/tv_aea_speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Speed"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_aea_speed_counter"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_aea_speed_counter"
+        app:layout_constraintTop_toBottomOf="@+id/tv_aea_speed_counter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

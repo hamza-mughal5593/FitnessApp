@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    tools:context=".v1.activity.fitness.ExerciseNewActivity">
+
+    <fragment
+        android:id="@+id/map"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_aen_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_circle_white_outline_dark_grey"
+        android:padding="15dp"
+        android:src="@drawable/ic_back"
+        android:tint="#fff"
+        app:layout_constraintEnd_toStartOf="@+id/b_aen_start"
+        app:layout_constraintTop_toTopOf="@+id/b_aen_start" />
+
+    <Button
+        android:id="@+id/b_aen_start"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_rounded_big_black"
+        android:fontFamily="sans-serif-black"
+        android:text="START"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="#fff"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_aen_list_active"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_circle_white_outline_dark_grey"
+        android:padding="10dp"
+        android:tint="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_walk" />
+
+    <ScrollView
+        android:id="@+id/sv_aen_list"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:scrollbars="none"
+        android:visibility="gone"
+        android:overScrollMode="never"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_aen_list_active"
+        app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_active">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_conversion_absoluteHeight="0dp"
+            tools:layout_conversion_absoluteWidth="200dp">
+
+            <ImageView
+                android:id="@+id/iv_aen_list_01"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                android:tint="#fff"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/ic_walk" />
+
+            <ImageView
+                android:id="@+id/iv_aen_list_02"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:tint="#fff"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_aen_list_01"
+                app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_01"
+                android:src="@drawable/ic_running" />
+
+            <ImageView
+                android:id="@+id/iv_aen_list_03"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:tint="#fff"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_aen_list_02"
+                app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_02"
+                android:src="@drawable/ic_climbing" />
+
+            <ImageView
+                android:id="@+id/iv_aen_list_04"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:tint="#fff"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_aen_list_03"
+                app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_03"
+                android:src="@drawable/ic_cycling" />
+
+            <ImageView
+                android:id="@+id/iv_aen_list_05"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:tint="#fff"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_aen_list_04"
+                app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_04"
+                android:src="@drawable/ic_hiking" />
+
+            <ImageView
+                android:id="@+id/iv_aen_list_06"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:tint="#fff"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_aen_list_05"
+                app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_05"
+                android:src="@drawable/ic_swimming" />
+
+            <ImageView
+                android:id="@+id/iv_aen_list_07"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                android:tint="#fff"
+                app:layout_constraintStart_toStartOf="@+id/iv_aen_list_06"
+                app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_06"
+                android:src="@drawable/ic_aerobic" />
+
+            <ImageView
+                android:id="@+id/iv_aen_list_08"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:tint="#fff"
+                android:background="@drawable/bg_circle_white_outline_grey"
+                android:padding="10dp"
+                app:layout_constraintStart_toStartOf="@+id/iv_aen_list_07"
+                app:layout_constraintTop_toBottomOf="@+id/iv_aen_list_07"
+                android:src="@drawable/ic_indoor_running" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_01"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/walk"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_01"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_01" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_02"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/run"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_02"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_02" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_03"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/stairs"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_03"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_03" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_04"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/cycle"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_04"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_04" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_05"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/hike"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_05"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_05" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_06"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/swim"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_06"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_06" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_07"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/aerobic"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_07"
+                app:layout_constraintStart_toStartOf="@+id/tv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_07" />
+
+            <TextView
+                android:id="@+id/tv_aen_list_08"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/indoor_run"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_aen_list_08"
+                app:layout_constraintStart_toStartOf="@+id/tv_aen_list_01"
+                app:layout_constraintTop_toTopOf="@+id/iv_aen_list_08" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

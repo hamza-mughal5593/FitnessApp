@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".v1.activity.AsadActivities.SelectFacilityActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SENARAI FASILITI"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/facility_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</LinearLayout>

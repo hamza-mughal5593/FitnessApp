@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageView
+        android:id="@+id/b_abr_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="goBack"
+        android:src="@drawable/ic_back"
+        android:tint="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_abr_08"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_rounded_grey_primary"
+        android:paddingStart="48dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="Sila log masuk akaun e-Fasiliti anda untuk meneruskan tempahan"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/b_abr_02"
+        app:layout_constraintStart_toStartOf="@+id/b_abr_02"
+        app:layout_constraintTop_toBottomOf="@+id/b_abr_back" />
+
+    <ImageView
+        android:id="@+id/iv_abr_03"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_white"
+        android:padding="8dp"
+        android:src="@drawable/ic_caution_sign"
+        android:tint="@color/colorOrange"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_abr_08"
+        app:layout_constraintStart_toStartOf="@+id/tv_abr_08"
+        app:layout_constraintTop_toTopOf="@+id/tv_abr_08" />
+
+    <View
+        android:id="@+id/b_abr_02"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_rounded_grey_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abr_08" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/b_abr_02"
+        app:layout_constraintEnd_toEndOf="@+id/b_abr_02"
+        app:layout_constraintStart_toStartOf="@+id/b_abr_02"
+        app:layout_constraintTop_toTopOf="@+id/b_abr_02">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <Button
+                android:id="@+id/b_abr_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_rounded_orange"
+                android:text="@string/b_sa_01"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relative6" />
+
+
+            <RelativeLayout
+                android:id="@+id/rel"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_03">
+
+
+                <Spinner
+                    android:id="@+id/s_abr_jenis_pengguna"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:text="Pengguna Awam"
+                    android:textSize="14sp"></Spinner>
+
+
+            </RelativeLayout>
+
+<!--                        <Spinner-->
+<!--                            android:id="@+id/s_abr_jenis_pengguna"-->
+<!--                            android:layout_width="0dp"-->
+<!--                            android:layout_height="43dp"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:layout_marginTop="8dp"-->
+<!--                            android:layout_marginEnd="16dp"-->
+<!--                            android:background="@drawable/bg_rounded_white"-->
+<!--                            android:ems="10"-->
+<!--                            android:entries="@array/s_abr_jenis_pengguna"-->
+<!--                            android:importantForAutofill="no"-->
+<!--                            android:inputType="text"-->
+<!--                            android:paddingLeft="8dp"-->
+<!--                            android:paddingRight="8dp"-->
+<!--                            android:text="Pengguna Awam"-->
+<!--                            android:textSize="14sp"-->
+<!--                            app:layout_constraintEnd_toEndOf="parent"-->
+<!--                            app:layout_constraintHorizontal_bias="0.5"-->
+<!--                            app:layout_constraintStart_toStartOf="parent"-->
+<!--                            app:layout_constraintTop_toBottomOf="@+id/tv_abr_03" />-->
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_8">
+
+                <Spinner
+                    android:id="@+id/s_abr_nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:entries="@array/s_abr_nationality"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:text="Pengguna Awam"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+<!--            <Spinner-->
+<!--                android:id="@+id/s_abr_nationality"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:background="@drawable/bg_rounded_white"-->
+<!--                android:ems="10"-->
+<!--                android:entries="@array/s_abr_nationality"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:text="Pengguna Awam"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_abr_8" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/rel3"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_6">
+
+                <Spinner
+
+                    android:id="@+id/s_abr_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:entries="@array/s_abr_gender"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:text="Pengguna Awam"
+                    android:textColor="#000"
+                    android:textSize="14sp"></Spinner>
+
+
+            </RelativeLayout>
+
+<!--            <Spinner-->
+<!--                android:id="@+id/s_abr_gender"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:background="@drawable/bg_rounded_white"-->
+<!--                android:ems="10"-->
+<!--                android:entries="@array/s_abr_gender"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:text="Pengguna Awam"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_abr_6" />-->
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative6"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_12">
+
+
+                <Spinner
+                    android:id="@+id/s_abr_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:entries="@array/s_opa_01"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:text="Pengguna Awam"
+                    android:textColor="#000"
+                    android:textSize="14sp"></Spinner>
+
+
+
+            </RelativeLayout>
+
+
+
+
+<!--            <Spinner-->
+<!--                android:id="@+id/s_abr_state"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:background="@drawable/bg_rounded_white"-->
+<!--                android:ems="10"-->
+<!--                android:entries="@array/s_opa_01"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:text="Pengguna Awam"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_abr_12" />-->
+
+
+            <RelativeLayout
+                android:id="@+id/rel4"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_6">
+
+                <Spinner
+                    android:id="@+id/s_abr_race"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:entries="@array/s_abr_race"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:text="Pengguna Awam"
+                    android:textColor="#000"
+                    android:textSize="14sp"></Spinner>
+
+            </RelativeLayout>
+
+<!--            <Spinner-->
+<!--                android:id="@+id/s_abr_race"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/bg_rounded_white"-->
+<!--                android:ems="10"-->
+<!--                android:entries="@array/s_abr_race"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:text="Pengguna Awam"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_abr_6" />-->
+
+            <EditText
+                android:id="@+id/et_abr_nric"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_2" />
+
+            <EditText
+                android:id="@+id/et_abr_postcode"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_10" />
+
+            <EditText
+                android:id="@+id/et_abr_city"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_10" />
+
+            <EditText
+                android:id="@+id/et_abr_phone"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_14" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/relative7"
+                android:layout_height="43dp"
+                android:layout_width="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_13">
+
+                <Spinner
+
+                    android:id="@+id/s_abr_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:entries="@array/s_abr_country"
+                    android:importantForAutofill="no"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+<!--            <Spinner-->
+<!--                android:id="@+id/s_abr_country"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/bg_rounded_white"-->
+<!--                android:ems="10"-->
+<!--                android:entries="@array/s_abr_country"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/guideline3"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_abr_13" />-->
+
+            <EditText
+                android:id="@+id/et_abr_password"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_3" />
+
+            <EditText
+                android:id="@+id/et_abr_email"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_4" />
+
+            <EditText
+                android:id="@+id/et_abr_fullname"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_5" />
+
+            <EditText
+                android:id="@+id/et_abr_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                android:ems="10"
+                android:gravity="top"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:minLines="5"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_9" />
+
+
+            <RelativeLayout
+                android:id="@+id/rel2"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/bg_rounded_white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_abr_">
+
+
+
+                <Spinner
+                    android:id="@+id/s_abr_jenis_kategori"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:importantForAutofill="no"
+                    android:inputType="text"></Spinner>
+
+            </RelativeLayout>
+
+
+<!--            <Spinner-->
+<!--                android:id="@+id/s_abr_jenis_kategori"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="43dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:background="@drawable/bg_rounded_white"-->
+<!--                android:ems="10"-->
+<!--                android:entries="@array/s_abr_jenis_kategori"-->
+<!--                android:importantForAutofill="no"-->
+<!--                android:inputType="text"-->
+<!--                android:paddingLeft="8dp"-->
+<!--                android:paddingRight="8dp"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                android:textSize="14sp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/tv_abr_" />-->
+
+            <TextView
+                android:id="@+id/tv_abr_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lupa Kata Laluan?"
+                android:textColor="@color/colorTeal"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_abr_03"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/User_Type"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_abr_"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/Category_Type"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/rel" />
+
+            <TextView
+                android:id="@+id/tv_abr_2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/NRIC_Number"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/rel2" />
+
+            <TextView
+                android:id="@+id/tv_abr_3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/Password"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_nric" />
+
+            <TextView
+                android:id="@+id/tv_abr_4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/Email"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_password" />
+
+            <TextView
+                android:id="@+id/tv_abr_5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/name"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_email" />
+
+            <TextView
+                android:id="@+id/tv_abr_9"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/Enter_Recent_Address"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/relative" />
+
+            <TextView
+                android:id="@+id/tv_abr_8"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/Citizenship"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/rel3" />
+
+            <TextView
+                android:id="@+id/tv_abr_6"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="Jentina"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_fullname" />
+
+            <TextView
+                android:id="@+id/tv_abr_10"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/zip_code"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_address" />
+
+            <TextView
+                android:id="@+id/tv_abr_12"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/state"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/rel"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_postcode" />
+
+            <TextView
+                android:id="@+id/tv_abr_7"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/Nation"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_fullname" />
+
+            <TextView
+                android:id="@+id/tv_abr_14"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/No_phone_number"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/rel4" />
+
+            <TextView
+                android:id="@+id/tv_abr_11"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/city"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_address" />
+
+            <TextView
+                android:id="@+id/tv_abr_13"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/countryyyy"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toBottomOf="@+id/et_abr_city" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".v1.activity.booking.BookingPaymentActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_abp_total"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abp_desc">
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_abp_desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkGrey"
+        android:paddingStart="24dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="5dp"
+        android:text="@string/list_of_resources"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abp_name" />
+
+    <TextView
+        android:id="@+id/tv_abp_total"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorDarkGrey"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/reduce"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_abp_submit" />
+
+    <TextView
+        android:id="@+id/tv_abp_submit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:paddingStart="48dp"
+        android:paddingTop="16dp"
+        android:paddingEnd="48dp"
+        android:paddingBottom="16dp"
+        android:text="@string/pay"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline8" />
+
+    <TextView
+        android:id="@+id/tv_abp_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorDarkGreyPrimary"
+        android:paddingLeft="24dp"
+        android:paddingTop="56dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="5dp"
+        android:text="KOMBES PAROI N9"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/v_abp_bg_01"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorDarkGrey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abp_name" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView5"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abp_desc">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_5sdp"
+           >
+
+
+            <LinearLayout
+                android:id="@+id/ll_invoice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/textView34"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/view15"></LinearLayout>
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/facility"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="@+id/textView32" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="@string/amount"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/sub_total"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/view16" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/total_paymnet"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/discount"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+            <TextView
+                android:id="@+id/tv_sub_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="tv_sub_total"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/view16"
+                app:layout_constraintStart_toEndOf="@+id/textView36"
+                app:layout_constraintTop_toTopOf="@+id/textView36" />
+
+            <TextView
+                android:id="@+id/tv_payment_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="tv_payment_total"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/view16"
+                app:layout_constraintStart_toEndOf="@+id/textView36"
+                app:layout_constraintTop_toTopOf="@+id/textView39" />
+
+            <TextView
+                android:id="@+id/tv_discount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="tv_discount"
+                android:textAlignment="textEnd"
+                android:textColor="#fff"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/view16"
+                app:layout_constraintStart_toEndOf="@+id/textView36"
+                app:layout_constraintTop_toTopOf="@+id/textView38" />
+
+            <TextView
+                android:id="@+id/tv_abp_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorBlack"
+                android:paddingStart="20dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="8dp"
+                android:text="@string/add"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/view16"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <View
+                android:id="@+id/view15"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:background="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="@+id/textView34"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+            <View
+                android:id="@+id/view16"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="@+id/textView34"
+                app:layout_constraintStart_toStartOf="@+id/textView32"
+                app:layout_constraintTop_toBottomOf="@+id/ll_invoice" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.7" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="226dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

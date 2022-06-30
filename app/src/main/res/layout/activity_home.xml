@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".v1.activity.dashboard.HomeActivity">
+
+    <View
+        android:id="@+id/v_nav_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        android:background="@color/colorGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view12"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:background="@drawable/bg_rounded_orenge_bottom_only"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tint="#fff"
+        android:padding="7dp"
+        android:background="@drawable/circle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_toggle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:background="@drawable/bg_rounded_white_outline_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_ah_avatar"
+        app:layout_constraintEnd_toEndOf="@+id/cv_ah_avatar"
+        app:layout_constraintStart_toStartOf="@+id/cv_ah_avatar"
+        app:layout_constraintTop_toTopOf="@+id/cv_ah_avatar" />
+
+    <RelativeLayout
+        android:id="@+id/cv_ah_avatar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/view17"
+        app:layout_constraintStart_toStartOf="@+id/view17"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_ah_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_avatar_man"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+    <View
+        android:id="@+id/view17"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:backgroundTint="#fff"
+        android:background="@drawable/bg_rounded_white_outline_grey"
+        app:layout_constraintBottom_toBottomOf="@+id/view12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="TextView1"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_ah_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cv_ah_avatar"
+        app:layout_constraintTop_toTopOf="@+id/cv_ah_avatar"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_ah_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:visibility="gone"
+        android:text="Subang Jaya"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="@+id/cv_ah_avatar"
+        app:layout_constraintEnd_toEndOf="@+id/tv_ah_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_ah_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ah_name" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/iv_ah_setting"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        android:layout_marginEnd="48dp"-->
+<!--        android:tint="#fff"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/cv_ah_avatar"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/cv_ah_avatar"-->
+<!--        android:src="@drawable/ic_gear" />-->
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/view17"
+        app:layout_constraintStart_toStartOf="@+id/view17"
+        app:layout_constraintTop_toTopOf="@+id/view17"
+        android:src="@drawable/ic_reward_01" />
+
+    <View
+        android:id="@+id/view18"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorGrey"
+        app:layout_constraintBottom_toBottomOf="@+id/view17"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/view17" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="FitPoint:"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view17"
+        app:layout_constraintStart_toEndOf="@+id/view18"
+        app:layout_constraintTop_toTopOf="@+id/view17" />
+
+    <TextView
+        android:id="@+id/tv_ah_point_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="100"
+        android:textColor="@color/colorOrange"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view17"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/view17" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="ƒ"
+        android:textColor="@color/colorOrange"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view17"
+        app:layout_constraintStart_toEndOf="@+id/tv_ah_point_counter"
+        app:layout_constraintTop_toTopOf="@+id/view17" />
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/v_nav_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view17">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/v_as_personal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#fff"
+                android:background="@drawable/bg_rounded_white_outline_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+            <View
+                android:id="@+id/v_as_faq"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#fff"
+                android:background="@drawable/bg_rounded_white_outline_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_as_personal" />
+
+            <View
+                android:id="@+id/v_as_signout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#fff"
+                android:background="@drawable/bg_rounded_white_outline_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_as_tnc" />
+
+            <View
+                android:id="@+id/v_as_tnc"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#fff"
+                android:background="@drawable/bg_rounded_white_outline_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_as_feedback" />
+
+            <View
+                android:id="@+id/v_as_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#fff"
+                android:background="@drawable/bg_rounded_white_outline_grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/v_as_faq" />
+
+            <TextView
+                android:id="@+id/tv_am_version_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/profile"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_personal"
+                app:layout_constraintStart_toEndOf="@+id/imageView13"
+                app:layout_constraintTop_toTopOf="@+id/v_as_personal" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="FAQ"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_faq"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/v_as_faq" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/feedback"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_feedback"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/v_as_feedback" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Privacy Policy"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_tnc"
+                app:layout_constraintStart_toEndOf="@+id/imageView14"
+                app:layout_constraintTop_toTopOf="@+id/v_as_tnc" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/signout"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_signout"
+                app:layout_constraintStart_toEndOf="@+id/imageView15"
+                app:layout_constraintTop_toTopOf="@+id/v_as_signout" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:scaleType="fitCenter"
+                android:tint="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_personal"
+                app:layout_constraintStart_toStartOf="@+id/v_as_personal"
+                app:layout_constraintTop_toTopOf="@+id/v_as_personal"
+                android:src="@drawable/ic_user" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:scaleType="fitCenter"
+                android:tint="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_faq"
+                app:layout_constraintStart_toStartOf="@+id/v_as_faq"
+                app:layout_constraintTop_toTopOf="@+id/v_as_faq"
+                android:src="@drawable/ic_information" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_survey"
+                android:tint="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_feedback"
+                app:layout_constraintStart_toStartOf="@+id/v_as_faq"
+                app:layout_constraintTop_toTopOf="@+id/v_as_feedback" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_accept"
+                android:tint="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_tnc"
+                app:layout_constraintStart_toStartOf="@+id/v_as_faq"
+                app:layout_constraintTop_toTopOf="@+id/v_as_tnc" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="24dp"
+                android:scaleType="fitCenter"
+                android:tint="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/v_as_signout"
+                app:layout_constraintStart_toStartOf="@+id/v_as_signout"
+                app:layout_constraintTop_toTopOf="@+id/v_as_signout"
+                android:src="@drawable/ic_logout" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <View-->
+<!--                android:id="@+id/v_ah_event"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginEnd="4dp"-->
+<!--                android:backgroundTint="#fff"-->
+<!--                android:background="@drawable/bg_rounded_white_outline_grey"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/v_ah_exercise" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/v_ah_reward"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                android:backgroundTint="#fff"-->
+<!--                android:background="@drawable/bg_rounded_white_outline_grey"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/v_ah_booking" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/v_ah_booking"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="4dp"-->
+<!--                android:backgroundTint="#fff"-->
+<!--                android:background="@drawable/bg_rounded_white_outline_grey"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/v_ah_reward"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/v_ah_event" />-->
+
+<!--            <View-->
+<!--                android:id="@+id/v_ah_exercise"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="95dp"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:backgroundTint="#fff"-->
+<!--                android:background="@drawable/bg_rounded_white_outline_grey"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintHorizontal_bias="0.5"-->
+<!--                app:layout_constraintHorizontal_chainStyle="packed"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView5"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:tint="@color/colorBlack"-->
+<!--                android:src="@drawable/ic_fitness"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/v_ah_exercise" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView16"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/tv_home_002"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView11"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_006a"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView14"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_007b"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_reward"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_reward"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView7" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView13"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_007a"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_reward"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_reward"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView17"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/tv_home_003"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView3" />-->
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView6"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:src="@drawable/ic_event"-->
+<!--                android:tint="@color/colorBlack"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/v_ah_exercise" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView12"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_006b"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView7" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView15"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="32dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:fontFamily="sans-serif-medium"-->
+<!--                android:text="@string/tv_home_001"-->
+<!--                android:textColor="@color/colorBlack"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/v_ah_exercise" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView8"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:src="@drawable/ic_reward"-->
+<!--                android:tint="@color/colorBlack"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_reward"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_reward"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/v_ah_exercise" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView8"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_004b"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView7" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView10"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_005b"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView7" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView7"-->
+<!--                android:layout_width="24dp"-->
+<!--                android:layout_height="24dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:src="@drawable/ic_booking"-->
+<!--                android:tint="@color/colorBlack"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_booking"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/v_ah_exercise" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView7"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_004a"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_exercise"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView9"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:fontFamily="sans-serif-condensed"-->
+<!--                android:text="@string/tv_home_005a"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="12sp"-->
+<!--                app:layout_constraintEnd_toEndOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/v_ah_event"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imageView5" />-->
+
+<!--            <HorizontalScrollView-->
+<!--                android:id="@+id/horizontalScrollView2"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView15">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_ah_news"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal"></LinearLayout>-->
+<!--            </HorizontalScrollView>-->
+
+<!--            <HorizontalScrollView-->
+<!--                android:id="@+id/horizontalScrollView3"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:visibility="gone"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView16">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_ah_events"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal" />-->
+<!--            </HorizontalScrollView>-->
+
+<!--            <HorizontalScrollView-->
+<!--                android:id="@+id/horizontalScrollView4"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="130dp"-->
+<!--                android:layout_marginStart="24dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+<!--                android:layout_marginBottom="32dp"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView17"-->
+<!--                app:layout_constraintVertical_bias="1.0">-->
+
+<!--                <LinearLayout-->
+<!--                    android:id="@+id/ll_ah_community"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:orientation="horizontal" />-->
+<!--            </HorizontalScrollView>-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navLayout"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="100dp"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/v_nav_home"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_home"
+                        android:layout_gravity="center"
+                        android:src="@drawable/home_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_home"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_home"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_history"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_history"
+                        android:layout_gravity="center"
+                        android:src="@drawable/activity_menu_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_history"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/activity"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/v_nav_fitness"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_fitness"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spsb_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_fitness"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_booking"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_news"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_news"
+                        android:layout_gravity="center"
+                        android:src="@drawable/news_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_news"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/news"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_gallery"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_gallery"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gallery_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_gallery"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/gallery"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_music"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_music"
+                        android:layout_gravity="center"
+                        android:src="@drawable/music_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_music"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/music"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_video"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_video"
+                        android:layout_gravity="center"
+                        android:src="@drawable/video_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_video"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Video"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_reward"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_reward"
+                        android:layout_gravity="center"
+                        android:src="@drawable/reward_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_reward"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_reward"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_event"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_event"
+                        android:layout_gravity="center"
+                        android:src="@drawable/event_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_event"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_event"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_booking"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_booking"
+                        android:layout_gravity="center"
+                        android:src="@drawable/my_profil_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_booking"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/profil"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/coverView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:visibility="gone"
+        android:background="#00000000"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".v1.activity.dashboard.RewardHistoryActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorGuava">
+
+                <ImageView
+                    android:id="@+id/view13"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/event_banner"
+                    android:scaleType="fitCenter"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/tv_reward_001"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_2sdp"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:text="@string/tv_reward_002"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintBottom_toTopOf="@+id/view17"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/circle"
+                android:padding="7dp"
+                android:src="@drawable/ic_toggle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:id="@+id/view17"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"
+                android:backgroundTint="#fff"
+                android:background="@drawable/bg_rounded_white_outline_grey"
+                app:layout_constraintBottom_toBottomOf="@+id/view12"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view12"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:scaleType="fitCenter"
+                    app:layout_constraintBottom_toBottomOf="@+id/view17"
+                    app:layout_constraintStart_toStartOf="@+id/view17"
+                    app:layout_constraintTop_toTopOf="@+id/view17"
+                    android:src="@drawable/ic_reward_01" />
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/fitpoint"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/view17"
+                    app:layout_constraintStart_toEndOf="@+id/view18"
+                    app:layout_constraintTop_toTopOf="@+id/view17" />
+
+
+                <TextView
+                    android:id="@+id/tv_ar_point_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="100"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/view17"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toTopOf="@+id/view17" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="ƒ"
+                    android:textColor="@color/colorOrange"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/view17"
+                    app:layout_constraintStart_toEndOf="@+id/tv_ar_point_counter"
+                    app:layout_constraintTop_toTopOf="@+id/view17" />
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_ar_all_rewards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/tv_reward_003"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_ar_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/tv_reward_004"
+                android:textColor="@color/colorDarkGrey"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/purchased_rewards_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/navLayout"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+
+        >
+
+        <ScrollView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/v_nav_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_home"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/home_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_home"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_history"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/activity_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_history"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/activity"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_fitness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_fitness"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spsb_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_fitness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_booking"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_news"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/news_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/news"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_gallery"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gallery_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/gallery"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_music"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_music"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/music_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_music"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/music"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_video"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/video_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Video"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_reward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_reward"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/reward_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_reward"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_event"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/event_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_event"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_booking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_booking"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/my_profil_menu_icon" />
+
+                    <TextView
+                        android:id="@+id/tv_nav_booking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/profil"
+                        android:textColor="#000"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <View
+        android:id="@+id/coverView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="100dp"
+        android:visibility="gone"
+        android:background="#00000000"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp">
+
+                <ImageView
+                    android:id="@+id/event_large_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_04"
+                    android:scaleType="centerCrop"></ImageView>
+
+
+                <ImageView
+                    android:id="@+id/event_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_fitness"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:scaleType="centerCrop"></ImageView>
+
+
+
+
+                <ImageView
+                    android:id="@+id/register_now"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:src="@drawable/register_now"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true"></ImageView>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="32dp"
+                >
+
+                <TextView
+                    android:id="@+id/event_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:text="@string/tv_rda_03"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorBlack"
+                        app:srcCompat="@drawable/date_icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/_5sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/date"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:id="@+id/event_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="29-2-2019"
+                            android:textColor="#fff"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorBlack"
+                        app:srcCompat="@drawable/location_icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/_5sdp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/location"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:id="@+id/event_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Los Angeles"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/colorBlack"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_rda_08"
+                        app:srcCompat="@drawable/ic_reward_04" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_rda_08"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_rda_08"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:id="@+id/event_description"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_rda_09"
+                            android:textColor="#fff"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="8dp"
+                        android:tint="@color/colorBlack"
+                        android:contentDescription="@string/app_name"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tv_rda_10"
+                        app:srcCompat="@drawable/ic_reward_05" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="@dimen/_5sdp">
+
+                        <TextView
+                            android:id="@+id/tv_rda_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tv_rda_10"
+                            android:textColor="@color/colorBlack"
+                            />
+
+                        <TextView
+                            android:id="@+id/event_term_and_condition"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:text="@string/text1"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/tv_rda_10"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_rda_10" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_gravity="end"
+            android:gravity="end">
+
+
+                <RelativeLayout
+                    android:id="@+id/going_rel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/going_bg_unselcted"
+                    android:layout_weight="1.2">
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Going"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"></LinearLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/not_going_rel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_weight="1.2"
+                    android:layout_gravity="end"
+                    android:background="@drawable/going_bg_unselcted"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Not Going"
+                        android:textColor="@color/white"
+                        android:layout_centerInParent="true"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15sdp"
+                        />
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

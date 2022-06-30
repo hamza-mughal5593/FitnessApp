@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_8sdp"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/complex_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2675B7"
+                android:padding="@dimen/_5sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Johor"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/complex_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Figure 3.4.12.1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/complex_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="Figure 3.4.12.1: Select State page (To-Be)"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. Tel:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+
+
+                        />
+
+                    <TextView
+                        android:id="@+id/complex_tel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:text="03035258350"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No. Faks:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/complex_fax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:text="03035258350"
+                        android:textAllCaps="true"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp"
+
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Emel:"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_13sdp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/compplex_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:text="asad@gmail.com"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@drawable/green_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Lokasi"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Senarai Faciliti"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_18sdp"
+
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/light_gray"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+
+                <TextView
+                    android:id="@+id/complex_facility_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:text="1: Asad \n 2: Asad \n 2: Asad \n 2: Asad \n 2: Asad \n 2: Asad \n 2: Asad"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_5sdp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="@drawable/blue_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:text="Seterusnya"
+                        android:textColor="#FFFFFF"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

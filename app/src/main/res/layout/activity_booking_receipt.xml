@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+        <ImageView
+            android:id="@+id/iv_abs_cover"
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_abs_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PADANG FUTSAL"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="5dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:src="@drawable/temp_000a" />
+
+    <Button
+        android:id="@+id/b_abs_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_orange"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:layout_marginBottom="68dp"/>
+
+
+</LinearLayout>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    tools:context=".v1.activity.AsadActivities.AsNewsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/news_banner" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#fff"
+                android:padding="7dp"
+                android:background="@drawable/circle"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/ic_toggle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/l1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_height="45dp">
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <Spinner
+                        android:id="@+id/year"
+                        android:background="@drawable/box002"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"></Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <Spinner
+                        android:id="@+id/month"
+                        android:background="@drawable/box002"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"></Spinner>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/category"
+                android:layout_below="@+id/layout"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/box002"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"></Spinner>
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/news_rv"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/navLayout"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="100dp"
+            android:fillViewport="true"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/v_nav_home"
+                    android:orientation="vertical"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_home"
+                        android:layout_gravity="center"
+                        android:src="@drawable/home_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_home"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_home"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_history"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_history"
+                        android:layout_gravity="center"
+                        android:src="@drawable/activity_menu_icon"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_history"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/activity"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/v_nav_fitness"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_fitness"
+                        android:layout_gravity="center"
+                        android:src="@drawable/spsb_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_fitness"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_booking"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_news"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_news"
+                        android:layout_gravity="center"
+                        android:src="@drawable/news_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_news"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/news"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_gallery"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_gallery"
+                        android:layout_gravity="center"
+                        android:src="@drawable/gallery_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_gallery"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/gallery"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_music"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_music"
+                        android:layout_gravity="center"
+                        android:src="@drawable/music_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_music"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/music"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_video"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_video"
+                        android:layout_gravity="center"
+                        android:src="@drawable/video_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_video"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Video"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_reward"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_reward"
+                        android:layout_gravity="center"
+                        android:src="@drawable/reward_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_reward"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_reward"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_event"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_event"
+                        android:layout_gravity="center"
+                        android:src="@drawable/event_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_event"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/tv_nav_event"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/v_nav_booking"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/iv_nav_booking"
+                        android:layout_gravity="center"
+                        android:src="@drawable/my_profil_menu_icon"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_nav_booking"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/profil"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/coverView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#00000000" />
+
+
+
+</RelativeLayout>

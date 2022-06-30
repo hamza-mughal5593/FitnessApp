@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1090954518913",
+    "firebase_url": "https://fitmyapp-af541.firebaseio.com",
+    "project_id": "fitmyapp-af541",
+    "storage_bucket": "fitmyapp-af541.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090954518913:android:169b0586885247396e4880",
+        "android_client_info": {
+          "package_name": "com.mtechsoft.fitmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090954518913-it42jqvml2bbi4v5spgeiccrneedh8n8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwa0i9-l-Q-uym7TO9ZJsDC3-3loFzu-k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090954518913-it42jqvml2bbi4v5spgeiccrneedh8n8.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1090954518913-omj4j3ss5i0tg6i30bicsf7g4amf41gn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "my.fit.Fit-Malaysia-App"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

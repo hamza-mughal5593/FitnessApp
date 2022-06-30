@@ -1,0 +1,434 @@
+<resources>
+    <string name="app_name">FitMY</string>
+
+    <string name="password">Kata laluan</string>
+    <string name="email_hint">Masukkan Alamat Emel</string>
+    <string name="password_hint">Masukkan kata laluan</string>
+
+    <string name="facility_list">Mendaftar</string>
+    <string name="Mandatory_Room">Ruang Mandatori</string>
+    <string name="User_Type">Jenis Pengguna</string>
+    <string name="Category_Type">Jenis Kategori</string>
+    <string name="User">Pengguna</string>
+    <string name="Civil_servants">Penjawat Awam</string>
+    <string name="User_ID">ID Pengguna</string>
+    <string name="Password">Kata laluan</string>
+    <string name="Enter_Password">Masukkan Kata laluan</string>
+    <string name="Enter_the_same_Password">Masukkan Kata laluan yang sama</string>
+    <string name="Confirm_password">Sahkan Kata Laluan</string>
+    <string name="Email">Emel</string>
+    <string name="bd">Tarikh Lahir</string>
+    <string name="birthday">Masukkan tarikh lahir</string>
+    <string name="complete_actitvity">Selesaikan aktiviti anda terlebih dahulu untuk kembali</string>
+    <string name="activity_type">Pilih jenis aktiviti</string>
+
+    <string name="Enter_your_email">Masukkan emel anda</string>
+    <string name="Full_name">Nama Penuh</string>
+    <string name="Enter_your_full_name">Masukkan nama penuh anda</string>
+    <string name="Gender">Jantina</string>
+    <string name="Nation">Bangsa</string>
+    <string name="Citizenship">Kewarganegaraan</string>
+    <string name="No_phone_number">Telefon Bimbit</string>
+    <string name="Enter_the_phone_number">Masukkan no tel Bimbit</string>
+    <string name="Office_Tel_No">No Tel Pejabat</string>
+    <string name="Enter_the_Office_Phone_Number">Masukkan No Telefon Pejabat</string>
+    <string name="Office_Fax_No">No Faks Pejabat</string>
+    <string name="Latest_Alamas">Alamas Terkini</string>
+    <string name="adress_hint">Masukkan Alamat tarkkini</string>
+    <string name="Enter_the_Office_Fax_No">Masukkan No Faks pejabat</string>
+    <string name="Enter_Recent_Address">Masukkan Alamat Terkini</string>
+    <string name="Zip_code">Poskod</string>
+    <string name="Enter_the_area_zip_code">Masukkan poskod kawasan</string>
+    <string name="City">Bandar</string>
+    <string name="Enter_the_City_Name">Masukkan Nama Bandar</string>
+    <string name="State">Negeri</string>
+    <string name="Negative">Piih Negari</string>
+    <string name="Country">Negara</string>
+    <string name="Come_back">Kembali</string>
+    <string name="agree">Saya bersetuju dengan</string>
+    <string name="trems_and_conditions">Terma dan Syarat</string>
+    <string name="latest">Terkini</string>
+    <string name="hieght">Ketinggian</string>
+    <string name="wieght">Berat Badan</string>
+    <string name="hieght_hint">Ketinggian dalam cm</string>
+    <string name="wieght_hint">Berat badan dalam kg</string>
+    <string name="date">Tarikh</string>
+    <string name="location">Lokasi</string>
+    <string name="pass_length">Kata laluan mesti sekurang-kurangnya 8 digit</string>
+    <string name="tv_ia_p01_01">SELAMAT DATANG</string>
+    <string name="tv_ia_p01_02">KE APLIKASI</string>
+    <string name="tv_ia_p01_03">FIT MALAYSIA</string>
+
+    <string name="tv_ia_01">KEMBALI</string>
+    <string name="tv_ia_02">SETERUSNYA</string>
+
+    <string name="tv_ia_p02_01">JOM FIT BERSAMA</string>
+    <string name="tv_ia_p02_02">Mari bersama-sama menjalankan aktiviti kecergasan untuk kecergasan tubuh dan minda seperti berjalan, berlari dan berbasikal</string>
+
+    <string name="tv_ia_p03_01">JEJAK AKTIVITI HARIAN</string>
+    <string name="tv_ia_p03_02">Jejaki aktiviti harian anda dengan mudah dan tepat. Tingkatkan gaya hidup dengan mencapai target harian dan mingguan</string>
+
+    <string name="tv_ia_p04_01">KUMPUL &amp; TEBUS GANJARAN</string>
+    <string name="tv_ia_p04_02">Tebus hadiah menarik dengan mata ganjaran menggunakan markah aktiviti fizikal harian anda</string>
+
+    <string name="tv_ia_p05_01">TEMPAHAN FASILITI</string>
+    <string name="tv_ia_p05_02">Tempah fasiliti pada kadar minimum dengan penebusan Mata Fit</string>
+
+    <string name="tv_sa_01">MARI MULAKAN HIDUP SIHAT</string>
+    <string name="tv_sa_02">Adakah anda...</string>
+    <string name="b_sa_01">Daftar Akaun</string>
+    <string name="b_sa_02">Log Masuk</string>
+
+
+    <string name="activity">Aktiviti</string>
+    <string name="news">Berita</string>
+    <string name="gallery">Galeri</string>
+    <string name="music">Muzik</string>
+    <string name="profil">Profil</string>
+    <string name="walk">Berjalan</string>
+    <string name="run">Berlari</string>
+    <string name="cycle">Berbasikal</string>
+    <string name="hike">Mendaki</string>
+    <string name="stairs">Naik Tangga</string>
+    <string name="indoor_run">Larian Dalaman</string>
+    <string name="aerobic">Aerobik</string>
+    <string name="swim">Berenang</string>
+    <string name="sleep">Tidur</string>
+    <string name="All_Rewards">Semua Ganjaran</string>
+    <string name="history">Sejarah</string>
+    <string name="fitpoint">FitPoint:</string>
+    <string name="tv_opa_pfl_01">PROFIL</string>
+    <string name="tv_opa_pfl_02">Perkenalkan diri anda</string>
+    <string name="tv_opa_pfl_03">Nama Penuh</string>
+    <string name="tv_opa_pfl_04">Nama Pendek</string>
+    <string name="tv_opa_pfl_05">Negeri</string>
+    <string name="b_opa_pfl_01">SETERUSNYA</string>
+    <string name="et_opa_pfl_01">Iman Danial</string>
+    <string name="et_opa_pfl_02">Danial</string>
+
+    <string name="tv_opa_phy_01">FIZIKAL</string>
+    <string name="tv_opa_phy_02">Kiraan BMI anda</string>
+    <string name="b_opa_phy_03">MULA</string>
+    <string name="tv_opa_phy_03">Tahun Lahir</string>
+    <string name="tv_opa_phy_04">0</string>
+    <string name="tv_opa_phy_05">Berat</string>
+    <string name="tv_opa_phy_06">0 kg</string>
+    <string name="tv_opa_phy_07">Tinggi</string>
+    <string name="tv_opa_phy_08">0 cm</string>
+
+    <string name="profile">Profil Saya</string>
+    <string name="name">Nama Penuh</string>
+    <string name="nick_name">Nama Pendek</string>
+    <string name="phone">Nombor Telefon</string>
+    <string name="email">Alamat Emel</string>
+    <string name="hight">Tinggi</string>
+    <string name="weight">Berat</string>
+    <string name="birth">Tahun Lahir</string>
+    <string name="gender">Jatina</string>
+    <string name="nationality">Bangsa</string>
+    <string name="country">Negara</string>
+    <string name="language">Bahasa</string>
+    <string name="signout">Daftar Keluar</string>
+    <string name="feedback">Maklum Balas</string>
+
+    <string name="tv_lpa_01">Selamat Kembali!</string>
+    <string name="tv_lpa_02">Sila log masuk untuk teruskan</string>
+    <string name="tv_lpa_03">Nombor Telefon</string>
+    <string name="tv_lpa_04">Hadapi masalah?</string>
+    <string name="tv_lpa_05">Hubungi Kami</string>
+    <string name="tv_lpa_06">Terma &amp; Syarat</string>
+    <string name="tv_lpa_07">Polici Privasi</string>
+    <string name="b_lpa_01">MULA</string>
+    <string name="tv_lpa_08">Maaf nombor telefon anda tidak ada di dalam rekod kami</string>
+
+    <string name="tv_lta_01">Nombor OTP telah dihantar ke telefon anda melalui SMS. Sila isikan 6 digit OTP tersebut dibawah</string>
+    <string name="tv_lta_02">Tidak terima TAC?</string>
+    <string name="tv_lta_03">Hantar semula dalam 3:25 minit</string>
+
+    <string name="tv_rda_01">300</string>
+    <string name="tv_rda_00">ƒ</string>
+    <string name="tv_rda_02">TEBUS GANJARAN</string>
+    <string name="tv_rda_02_01">TIDAK TERSEDIA</string>
+    <string name="tv_rda_02_02">KEKURANGAN POINT</string>
+    <string name="tv_rda_03">Tealive</string>
+    <string name="tv_rda_05">24 days left</string>
+    <string name="tv_rda_08">Butiran Ganjaran</string>
+    <string name="tv_rda_09">Tealive Malaysia</string>
+    <string name="tv_rda_10"><![CDATA[Terms & Conditions]]></string>
+    <string name="tv_rda_11">1. This coupon only valid with 1 item purchases from a single outlet.\n2. This coupon can’t be traded for actual currency\n3. The use of this coupon is strictly for FitMY app users only.\n4. Do not misused or resell this coupon.</string>
+
+    <string name="tv_rra_01">Vendor</string>
+    <string name="tv_rra_02">Item</string>
+    <string name="b_rra_02">SELESAI</string>
+
+    <string name="b_da_ef_li_01">LIHAT</string>
+    <string name="tv_da_ef_li_01">FUN RUN (5KM)</string>
+    <string name="tv_da_ef_li_02">Kampung Dusun, Sementah</string>
+    <string name="tv_da_ef_li_04">20 Nov 2019</string>
+
+    <string name="b_da_rf_li_01">TEBUS</string>
+    <string name="tv_da_rf_li_02">RM1.00 for second cup...</string>
+    <string name="tv_da_rf_li_03">300</string>
+    <string name="tv_da_rf_li_01">Tealive</string>
+    <string name="tv_da_rf_li_00">ƒ</string>
+
+    <string name="request_location_updates">Request location updates</string>
+    <string name="remove_location_updates">Remove location updates</string>
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <string name="b_lpa2_01">TERUSKAN</string>
+    <string name="tv_lpa2_01">PILIHAN BAHASA</string>
+    <string name="tv_lpa2_02">Sila pilih bahasa</string>
+
+    <string-array name="s_opa_01">
+        <item>Selangor</item>
+        <item>WP Kuala Lumpur</item>
+        <item>WP Putrajaya</item>
+        <item>Johor</item>
+        <item>Sarawak</item>
+        <item>Penang</item>
+        <item>Sabah</item>
+        <item>Perak</item>
+        <item>Pahang</item>
+        <item>Negeri Sembilan</item>
+        <item>Kedah</item>
+        <item>Malacca</item>
+        <item>Terengganu</item>
+        <item>Kelantan</item>
+        <item>WP Labuan</item>
+        <item>Perlis</item>
+    </string-array>
+
+    <string-array name="s_lpa2_01">
+        <item>Bahasa Malaysia</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Lelaki</item>
+        <item>Perempuan</item>
+
+    </string-array>
+    <string name="coming_soon">Akan datang...</string>
+
+
+    <string name="January">Januari</string>
+    <string name="February">Februari</string>
+    <string name="March">Mac</string>
+    <string name="April">April</string>
+    <string name="May">Mei</string>
+    <string name="Jun">Jun</string>
+    <string name="July">Julai</string>
+    <string name="August">Ogos</string>
+    <string name="September">September</string>
+    <string name="October">Oktober</string>
+    <string name="November">November</string>
+    <string name="December">Disember</string>
+
+
+    <string-array name="months_spin">
+
+        <item>Januari</item>
+        <item>Februari</item>
+        <item>Mac</item>
+        <item>April</item>
+        <item>Mei</item>
+        <item>Jun</item>
+        <item>Julai</item>
+        <item>Ogos</item>
+        <item>September</item>
+        <item>Oktober</item>
+        <item>November</item>
+        <item>Disember</item>
+
+    </string-array>
+
+    <string name="tnc">Privacy Policy\n\nProtecting your privacy is important to us. We hope the following statement will help you understand how our app deals with the personal identifiable information (\'PII\') you may occasionally provide to us via Internet (the Google Play Platform).\n\nGenerally, we do not collect any PII from you when you download our Android applications. To be specific, we do not require the consumers to get registered before downloading the application, nor do we keep track of the consumers\' visits of our application, we even don\'t have a Server to store such PII.\n\nInformation we collect\nCookies ( Webview browser cookies) - When you visit Forum service, we may send one or more cookies ? files with small amount of data that is commonly used an anonymous unique identifier ?to your mobile device that uniquely identifies your device and allows the application to help you log in faster and enhance your navigation through the Forum. You can reset your web browser to refuse all cookies or to indicate when a cookie is being sent. If you choose to refuse our cookies, you may not be able to use some portions of this Service.\n\nAds - Our app may uses Facebook as ads provider. Facebook uses cookies (as described above) to make it possible to analyze how users use Our Services, and show ads that are relevant to you. For more information, please check https://m.facebook.com/ads/ad_choices.\n\nAnalytics - We use third party analytics tool, Google Analytics, to help us measure traffic and usage trends for the service. Google Analytics collects information such as how often users visit our services, what pages they visit when they do so, and what other pages they use prior to coming to our services. We use the information get from Google Analytics only to improve our services.\n\nHealth Kit- You will also have an option to permit us to import health data into the App from third-party services such as Google Fit. Permitting us to access third party information can help you to maximize your App experience, and we will handle any such third-party information in accordance with this Privacy Policy.\n\nLog file - The only situation we may get access to your PII is when you personally decide to email us your feedback or to provide us with a bug log report. The PII we may get from you in that situation are strictly limited to your name, email address, device information, location Information and your survey response only.\n\nHow we use your information\nIn above situation, we guarantee that your PII will only be used for conOTPting you and improving our services. We will never use such information (e.g. your name and email address) for any other purposes, such as to further market our products, or to disclose your personal information to a third party for commercial gains.\n\nConOTPt us\nIt should be noted that whether or not to send us your feedback or bug report is a completely voluntary initiative upon your own decision. If you have concern about your PII being misused, or if you want further information about our privacy policy and what it means, please feel free to email us at kem.beliadansukan@gmail.com, we will endeavor to provide clear answers to your questions in a timely manner.</string>
+    <string name="tv_nav_home">Utama</string>
+    <string name="tv_nav_fitness">Profil</string>
+    <string name="tv_nav_reward">Ganjaran</string>
+    <string name="tv_nav_event">Program</string>
+    <string name="tv_nav_booking">Fasiliti</string>
+    <string name="update_profile">Kemas kini Profil</string>
+
+    <string name="tv_home_001">Berita &amp; Hebahan</string>
+    <string name="tv_home_002">Program Terdekat</string>
+    <string name="tv_home_003">Berita Komuniti</string>
+
+    <string name="tv_home_004a">Catat</string>
+    <string name="tv_home_004b">Aktiviti</string>
+    <string name="tv_home_005a">Sertai</string>
+    <string name="tv_home_005b">Program</string>
+    <string name="tv_home_006a">Tempah</string>
+    <string name="tv_home_006b">Fasiliti</string>
+    <string name="tv_home_007a">Tebus</string>
+    <string name="tv_home_007b">Ganjaran</string>
+
+    <string name="tv_fitness_001">DIARI KECERGASAN</string>
+    <string name="tv_fitness_002">Kilometer</string>
+    <string name="tv_fitness_003">Kalori</string>
+    <string name="tv_fitness_004">Jumlah Tapak</string>
+    <string name="tv_fitness_005">Jejak GPS</string>
+    <string name="tv_fitness_006">Aktiviti Kecergasan</string>
+    <string name="tv_fitness_007">Mula</string>
+    <string name="tv_fitness_008">Tinggi</string>
+    <string name="tv_fitness_009">BErat</string>
+    <string name="tv_fitness_010">Kecergasan</string>
+    <string name="tv_fitness_011">Minit</string>
+
+    <string name="tv_af_steps_label2">Tapak</string>
+    <string name="tv_af_steps_label5">Kalori</string>
+    <string name="tv_af_steps_label3">Jarak</string>
+    <string name="tv_af_steps_label4">Jantung</string>
+    <string name="tv_af_steps_label6">Tidur</string>
+
+    <string name="tv_reward_001">TEBUS GANJARAN</string>
+    <string name="tv_reward_002">Pilih ganjaran utuk ditebus</string>
+    <string name="tv_reward_003">Semua Ganjaran</string>
+    <string name="tv_reward_004">Sejarah</string>
+
+    <string name="tv_event_001">Cari</string>
+    <string name="tv_event_002">Acara &amp; Program</string>
+    <string name="tv_event_003">Berdaftar</string>
+
+    <string-array name="s_booking_001">
+        <item>Per Jam</item>
+        <item>Per Hari</item>
+    </string-array>
+
+    <string-array name="s_ab_state">
+        <item>WP Kuala Lumpur</item>
+        <item>WP Putrajaya</item>
+        <item>WP Labuan</item>
+        <item>Perlis</item>
+        <item>Kedah</item>
+        <item>Selangor</item>
+        <item>Johor</item>
+        <item>Negeri Sembilan</item>
+        <item>Pahang</item>
+        <item>Melaka</item>
+        <item>Sabah</item>
+        <item>Sarawak</item>
+        <item>Perak</item>
+        <item>Kelantan</item>
+        <item>Terengganu</item>
+        <item>Pulau Pinang</item>
+    </string-array>
+
+    <string-array name="s_abr_jenis_pengguna">
+        <item>Pengguna Awam</item>
+    </string-array>
+
+
+
+
+    <string-array name="s_abr_jenis_kategori">
+        <item>Penjawat Awam</item>
+        <item>Badan Berkanun</item>
+        <item>Swasta</item>
+        <item>Persatuan Berdaftar</item>
+        <item>Lain-Lain</item>
+    </string-array>
+
+    <string-array name="s_abr_gender">
+        <item>Lelaki</item>
+        <item>Perempuan</item>
+    </string-array>
+
+    <string-array name="s_abr_race">
+        <item>Melayu</item>
+        <item>Cina</item>
+        <item>India</item>
+        <item>Lain-Lain</item>
+    </string-array>
+
+    <string-array name="s_abr_nationality">
+        <item>Warganegara</item>
+        <item>Bukan Warganegara</item>
+    </string-array>
+
+    <string-array name="s_abr_country">
+        <item>Malaysia</item>
+    </string-array>
+
+    <string-array name="s_abs_jenis_kadar">
+        <item>Per Hari</item>
+        <item>Per Jam</item>
+    </string-array>
+
+    <string-array name="s_abs_bil_unit_tempahan">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+
+
+
+    <string name="titile_forgot">Lupa kata laluan</string>
+    <string name="txt_forgot">Lupa kata laluan ?</string>
+
+    <string name="password_empty">Kata laluan kosong</string>
+    <string name="confirm_password_empty">Sahkan kata laluan kosong</string>
+    <string name="password_not_matched">Kata laluan tidak dipadankan</string>
+    <string name="email_empty">E-mel kosong</string>
+    <string name="name_empty">Nama Penuh Kosong</string>
+    <string name="phone_empty">Telefon Bimbit Kosong</string>
+    <string name="birthday_empty">Tarikh lahir kosong</string>
+    <string name="empty_term">Anda tidak bersetuju dengan terma dan syarat kami</string>
+    <string name="hieght_empty">Ketinggian kosong</string>
+<!--    <string name="weight_empty1">Berat kosong</string>-->
+    <string name="comming_soon">akan datang</string>
+    <string name="wait">Tunggu...</string>
+    <string name="weight_emp">Berat Badan Kosong</string>
+    <string name="registered">Telah berjaya</string>
+    <string name="email_error_registered">E-mel sudah didaftarkan!</string>
+    <string name="naionality_empty">Kewarganegaraan kosong</string>
+    <string name="address_empty">Alamat kosong</string>
+    <string name="profile_success">Profil Dikemas kini Berjaya</string>
+    <string name="same_location">Anda berada di lokasi yang sama</string>
+    <string name="login_success">Masuk Kejayaan</string>
+    <string name="reward_purchased">Tahniah !, Anda Membeli Ganjaran Itu!</string>
+    <string name="no_data">Tiada data dijumpai!</string>
+    <string name="no_location_data">Tiada data Lokasi untuk aktiviti ini</string>
+    <string name="walking">Berjalan kaki</string>
+    <string name="all_faciliteis">Semua Kemudahan</string>
+    <string name="Booking_History">Sejarah Tempahan</string>
+    <string name="Operating_Hour">Jam Operasi</string>
+    <string name="Address">Alamat</string>
+    <string name="login">Log Masuk</string>
+    <string name="NRIC_Number">Nombor NRIC</string>
+    <string name="simple_Password">Kata laluan</string>
+    <string name="booking_signup">Daftar Akaun</string>
+    <string name="start_date">Tarikh Mula</string>
+    <string name="end_date">Tarikh Akhir</string>
+    <string name="start_time">Waktu Mula</string>
+    <string name="end_time">Waktu Akhir</string>
+    <string name="rate_type">Jenis Kadar</string>
+    <string name="no_of_users">Jumlah Pengguna</string>
+    <string name="reservation_unit">Bil. Unit Tempahan</string>
+    <string name="amount">Jumlah: RM</string>
+    <string name="book">TEMPAH</string>
+    <string name="list_of_resources">SENARAI TEMPAHAN</string>
+    <string name="facility">Fasiliti</string>
+    <string name="sub_total">Sub - Jumlah (RM)</string>
+    <string name="discount">Diskaun (RM)</string>
+    <string name="total_paymnet">Jumlah Bayaran (RM)</string>
+    <string name="add">TAMBAH</string>
+    <string name="reduce">TEBUS DISKAUN</string>
+    <string name="zip_code">Poskod</string>
+    <string name="city">Bandar</string>
+    <string name="state">Negeri</string>
+    <string name="countryyyy">Negara</string>
+    <string name="error_message">Sila isi semua kotak untuk mendaftar</string>
+    <string name="term">Terma and Syarat</string>
+    <string name="Iagree">Saya setuju</string>
+    <string name="cash">Tunai</string>
+    <string name="fpx">FPX (Pembayaran)</string>
+
+    <string name="year">Pilih Tahun</string>
+    <string name="month">Pilih Bulan</string>
+    <string name="category">Pilih Kategori</string>
+
+    <string name="later_message">Bayaran perlu dibuat dalam tempoh 3 selepas Tarikh tempahan dibuat. Sekiranya bayaran tidak diterima dalam tempoh tersebut, sistem akan membuat pembatalan secara automatik.</string>
+    <string name="signup_message">E-mel telah dihantar kepada alamat e-mel yang berdaftar. Sila buka dan klik pautan untuk mengaktifkan akaun anda.</string>
+</resources>

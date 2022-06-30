@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/stepsbg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_margin="@dimen/_5sdp"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardBackgroundColor="@color/colorLighterGrey"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+
+                android:id="@+id/activity_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:padding="15dp"
+                android:scaleType="fitCenter"
+                android:tint="@color/colorWhite"
+                app:srcCompat="@drawable/ic_fma_logo" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.4"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="walking"
+
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/colorOrange"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+
+
+        <TextView
+
+            android:id = "@+id/date_time"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:gravity = "center_horizontal"
+            android:textSize = "@dimen/_11sdp"
+            android:textColor ="@color/colorWhite"
+            android:text="date"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        >
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/steps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="end"
+            android:text="100"
+            android:layout_marginEnd="@dimen/_5sdp"
+            />
+
+
+        <TextView
+            android:id="@+id/typee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:gravity="center_horizontal"
+            android:text=" Calories"
+            android:textColor="@color/colorOrange"
+            android:textSize="@dimen/_11sdp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorGravity="bottom"
+        app:sliderIndicatorSelectedColor="@android:color/transparent"
+        app:sliderIndicatorUnselectedColor="@android:color/transparent"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true" />
+
+    <Button
+        android:id="@+id/b_sa_01"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_rounded_orange"
+        android:onClick="goOnboarding"
+        android:text="@string/b_sa_01"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/b_sa_02"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bg_rounded_orange"
+        android:onClick="goLogin"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/b_sa_02"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+<!--    <Button-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:background="@drawable/bg_rounded_orange"-->
+<!--        android:onClick="goOnboarding"-->
+<!--        android:text="@string/b_sa_01"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#fff"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/b_sa_02"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <Button-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="43dp"-->
+<!--        android:layout_marginStart="32dp"-->
+<!--        android:layout_marginEnd="32dp"-->
+<!--        android:layout_marginBottom="76dp"-->
+<!--        android:background="@drawable/bg_rounded_grey"-->
+<!--        android:onClick="goLogin"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="#fff"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:id="@+id/tv_sa_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/tv_sa_01"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/tv_sa_02"
+        android:layout_above="@+id/b_sa_01"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

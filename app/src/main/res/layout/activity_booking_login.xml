@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageView
+
+        android:id="@+id/iv_abl_01"
+        android:layout_width="140dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_circle_white"
+        android:contentDescription="@string/app_name"
+        android:padding="5dp"
+        android:src="@drawable/ic_kbs_logo_01"
+        app:layout_constraintBottom_toTopOf="@+id/tv_abl_01"
+        app:layout_constraintDimensionRatio="h,1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+
+        android:id="@+id/tv_abl_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistem Pengurusan Sukan Bersepadu"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/tv_abl_08"
+        app:layout_constraintEnd_toEndOf="@+id/iv_abl_01"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/iv_abl_01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_abl_01" />
+
+    <TextView
+        android:id="@+id/tv_abl_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="e-Fasiliti"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_abl_02"
+        app:layout_constraintEnd_toEndOf="@+id/iv_abl_01"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/iv_abl_01"
+        app:layout_constraintTop_toBottomOf="@+id/iv_abl_01" />
+
+    <View
+        android:id="@+id/b_abl_02"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="76dp"
+        android:backgroundTint="#fff"
+        android:background="@drawable/bg_rounded_grey_primary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_abl_nric"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/bg_rounded_dark_grey_primary"
+        android:ems="10"
+        android:hint="@string/NRIC_Number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingLeft="42dp"
+        android:paddingRight="42dp"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/et_abl_pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_abl_02"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/et_abl_pass"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/bg_rounded_dark_grey_primary"
+        android:ems="10"
+        android:hint="@string/simple_Password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingLeft="42dp"
+        android:paddingRight="42dp"
+        android:text=""
+        android:textColor="#fff"
+        android:textColorHint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/b_abl_02"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_abl_nric" />
+
+    <ImageView
+        android:id="@+id/b_abl_submit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_orange"
+        android:onClick="goSubmit"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_forward"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/et_abl_pass"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@+id/et_abl_nric"
+        app:layout_constraintTop_toTopOf="@+id/et_abl_pass" />
+
+    <ImageView
+        android:id="@+id/b_abl_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/app_name"
+        android:onClick="goBack"
+        android:src="@drawable/ic_back"
+        android:tint="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_idcard"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/et_abl_nric"
+        app:layout_constraintStart_toStartOf="@+id/et_abl_nric"
+        app:layout_constraintTop_toTopOf="@+id/et_abl_nric" />
+
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_key"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/et_abl_pass"
+        app:layout_constraintStart_toStartOf="@+id/et_abl_nric"
+        app:layout_constraintTop_toTopOf="@+id/et_abl_pass" />
+
+    <TextView
+        android:id="@+id/tv_abl_07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Lupa Kata Laluan?"
+        android:textColor="@color/colorTeal"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/b_abl_02"
+        app:layout_constraintEnd_toEndOf="@+id/b_abl_02"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_abl_09"
+        app:layout_constraintTop_toBottomOf="@+id/et_abl_pass" />
+
+    <TextView
+        android:id="@+id/tv_abl_09"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/booking_signup"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/b_abl_02"
+        app:layout_constraintEnd_toStartOf="@+id/tv_abl_07"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@+id/b_abl_02"
+        app:layout_constraintTop_toBottomOf="@+id/et_abl_pass" />
+
+    <TextView
+        android:id="@+id/tv_abl_03"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/login"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/et_abl_nric"
+        app:layout_constraintStart_toStartOf="@+id/et_abl_nric" />
+
+    <TextView
+        android:id="@+id/tv_abl_08"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_rounded_grey_primary"
+        android:backgroundTint="#fff"
+        android:paddingStart="48dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone"
+        android:text="Sila log masuk akaun e-Fasiliti anda untuk meneruskan tempahan"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/b_abl_02"
+        app:layout_constraintEnd_toEndOf="@+id/b_abl_02"
+        app:layout_constraintStart_toStartOf="@+id/b_abl_02" />
+
+    <ImageView
+        android:id="@+id/iv_abl_03"
+        android:layout_width="40dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_white"
+        android:padding="8dp"
+        android:backgroundTint="#fff"
+        android:src="@drawable/ic_caution_sign"
+        android:tint="@color/colorOrange"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_abl_08"
+        app:layout_constraintStart_toStartOf="@+id/tv_abl_08"
+        app:layout_constraintTop_toTopOf="@+id/tv_abl_08" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

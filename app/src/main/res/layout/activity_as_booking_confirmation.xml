@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/_6sdp"
+    android:orientation="vertical"
+    tools:context=".v1.activity.AsadActivities.AsBookingConfirmationActivity">
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BOOKING Confirmation"
+        android:textAllCaps="true"
+        android:textColor="@color/heading"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_border_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KOMPLEKS BELIA DAN SUKAN JOHOR"
+                android:textAllCaps="true"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Faciliti"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Unit"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_11sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:text="Jumlah (RM)"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+
+                    android:id="@+id/booked_facility_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:listitem="@layout/booked_facilities_adapter_layout"
+                    tools:itemCount="2"
+
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:text="Sub - Jumlah (RM)"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:text="300.00"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/light_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:text="Mata - Ganjaran (RM)"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:text="300.00"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/light_gray" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_18sdp"
+                    android:text="Jumlah Bayaran (RM)"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_14sdp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:text="300.00"
+                    android:textColor="@color/heading"
+                    android:textSize="@dimen/_11sdp" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/add_facility_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_bg">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="+Tambah Fasiliti"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_border_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tebus Mata Ganjaran"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/light_gray" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/light_blue_bg">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kod Mata Ganjaran ini boleh didapati dan dijana degan FIT MY app bagi menebus Fitpoint yang ada"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:textStyle="italic"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/redeem_bg"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.55"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="Masukkan Kod Diskuan"
+                        android:textSize="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_8sdp"/>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".45"
+                    android:background="@color/blue"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Semak"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_centerInParent="true"/>
+
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_border_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Butiran Pemohon"
+                android:textColor="@color/heading"
+                android:textSize="@dimen/_12sdp"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/light_gray" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nama Penuh"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/_11sdp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/redeem_bg">
+
+                        <EditText
+                            android:id="@+id/name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Name"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:textSize="@dimen/_9sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Id Pengguna"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/_11sdp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/redeem_bg">
+
+
+                        <EditText
+                            android:id="@+id/id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="12345678"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="No Telefone"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/_11sdp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp"
+
+                            />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/redeem_bg">
+
+                        <EditText
+                            android:id="@+id/no_telofone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="123456789"
+                            android:inputType="phone"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp"
+                            android:textSize="@dimen/_9sdp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical">
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.95"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Emel"
+                            android:textColor="@color/heading"
+                            android:textSize="@dimen/_11sdp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/_15sdp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@drawable/redeem_bg">
+
+
+                        <EditText
+                            android:id="@+id/no_tel"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="asad@gmail.com"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/gray_border_bg"
+            android:orientation="vertical"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/light_yellow_bg"
+                android:padding="@dimen/_10sdp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment And booking Information"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Payment must be made within 3 days of the date of booking. If payment is not recieved wihtin that time, the facility's booking will be autometically canceled. Please make the payment at the counter within 3 days with the copy of booking form from the officers. "
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        />
+
+
+
+
+
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/light_blue_bg">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jumiah Tempahan (RM)"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="300.00"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kaedah Bayaran"
+                        android:textColor="@color/heading"
+                        android:textSize="@dimen/_10sdp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="*"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/_15sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/redeem_bg">
+
+
+                    <Spinner
+                        android:id="@+id/payment_methods_sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/term_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_3sdp"
+                    android:text="@string/agree"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <TextView
+
+                    android:id="@+id/term_conditon_link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:text="@string/trems_and_conditions"
+                    android:textColor="#32C0F0"
+                    android:textSize="@dimen/_11sdp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+
+
+                android:id="@+id/confirm_booking_rel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/green_bg"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="Confirm Booking"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

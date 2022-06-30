@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mtechsoft.fitmy">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".v1.activity.AsadActivities.WebviewActivity"></activity>
+        <activity android:name=".v1.activity.booking.ShowPdf" />
+        <activity android:name=".v1.activity.AsadActivities.PdfViewActivity" />
+        <activity android:name=".v1.activity.AsadActivities.ViewBookingActivity" />
+        <activity android:name=".v1.activity.AsadActivities.BookingProcessActivity" />
+        <activity android:name=".v1.activity.AsadActivities.AsBookingDetailActivity" />
+        <activity android:name=".v1.activity.AsadActivities.AsBookingConfirmationActivity" />
+        <activity android:name=".v1.activity.AsadActivities.SelectFacilityActivity" />
+        <activity android:name=".v1.activity.AsadActivities.SelectComplexActivity" />
+        <activity android:name=".v1.activity.AsadActivities.AsBookingActivity" />
+        <activity android:name=".v1.activity.AsadActivities.CaloriesReportActivity" />
+        <activity android:name=".v1.activity.AsadActivities.AsEventDetailActivity" />
+        <activity android:name=".v1.activity.AsadActivities.AsProfileActivity" />
+        <activity
+            android:name=".v1.activity.AsadActivities.AsNewsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity android:name=".v1.activity.media.AudioActivity" />
+        <activity android:name=".v1.activity.media.VideoActivity" />
+        <activity android:name=".v1.activity.dashboard.NewsActivity" />
+        <activity android:name=".v1.activity.fitness.StartFitness" />
+        <activity android:name=".v1.activity.fitness.FitnessHistory" />
+        <activity android:name=".v1.activity.fitness.SelectSDKActivity" />
+        <activity android:name=".v1.activity.event.EventDetails" />
+        <activity android:name=".v1.activity.fitness.StepsReportActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <activity
+            android:name=".v1.activity.landing.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".v1.activity.landing.IntroductionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.landing.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.login.LoginTacActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.login.LoginPhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.onboarding.OnboardingPhysicalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.onboarding.OnboardingProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.dashboard.FitnessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.dashboard.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.fitness.ExerciseNewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.fitness.ExerciseActiveActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.reward.RewardRedeemActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.reward.RewardDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.dashboard.BookingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.AsadActivities.AsEventActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.AsadActivities.NewStepsReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.AsadActivities.RewardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.setting.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.fitness.FitnessDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.fitness.ExerciseReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.profile.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.booking.BookingScheduleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.booking.BookingDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.event.EventDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.dashboard.RewardHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.setting.FAQActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.booking.BookingPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".v1.activity.news.NewsDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.dashboard.BookingHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.booking.BookingReceiptActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.fitness.SleepReportActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.profile.VerifyProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.setting.TncActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.dashboard.EventHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.fitness.GpsTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.landing.LanguagePrefActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.booking.BookingRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".v1.activity.booking.BookingLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyAfWDWUfQ6jzD6aUBAUeaaKMZ65w8ZB1Es" /> -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" /> <!-- <meta-data -->
+        <!-- android:name="com.google.android.geo.API_KEY" -->
+        <!-- android:value="AIzaSyDYX9VUnF1g6C3vL9Zw2WmxmouBLbT4_JU" /> -->
+        <service
+            android:name=".v1.service.StepsService"
+            android:enabled="true" />
+        <service
+            android:name=".v1.service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".v1.service.LocationUpdatesService"
+            android:enabled="true"
+            android:exported="true"
+            android:foregroundServiceType="location" />
+    </application>
+
+</manifest>

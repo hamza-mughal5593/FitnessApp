@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp">
+
+                <ImageView
+                    android:id="@+id/iv_and_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:background="@color/colorLightGrey"
+                    app:srcCompat="@drawable/bg_04"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_and_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_fma_logo"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_15sdp">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/colorBlack"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_and_08"
+                    app:srcCompat="@drawable/ic_reward_04" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/tv_and_08"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:textColor="@color/colorDarkGrey"
+                        android:layout_marginTop="@dimen/_5sdp"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_and_09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="32dp"
+                        android:textColor="#fff"
+                        android:text="sjdfjhsdvjs"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_10sdp">
+
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="24dp"
+                    android:tint="@color/colorBlack"
+                    android:contentDescription="@string/app_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_and_09"
+                    app:srcCompat="@drawable/ic_reward_05" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginStart="@dimen/_5sdp">
+
+                    <TextView
+                        android:id="@+id/tv_and_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical"
+                        android:textColor="#fff"
+                        android:text="@string/tv_rda_08"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_and_09"
+                        app:layout_constraintStart_toStartOf="@+id/tv_and_09"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_and_09" />
+
+
+                    <TextView
+                        android:id="@+id/newd_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="32dp"
+                        android:textColor="#fff"
+                        android:text=""
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/tv_and_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_and_content" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

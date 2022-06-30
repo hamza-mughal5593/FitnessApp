@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.smarteist.autoimageslider.SliderView
+        android:id="@+id/imageSlider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:sliderAnimationDuration="600"
+        app:sliderAutoCycleDirection="back_and_forth"
+        app:sliderAutoCycleEnabled="true"
+        app:sliderIndicatorSelectedColor="@android:color/transparent"
+        app:sliderIndicatorUnselectedColor="@android:color/transparent"
+        app:sliderScrollTimeInSec="2"
+        app:sliderStartAutoCycle="true"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/view19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <Button
+        android:id="@+id/b_lpa2_01"
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/bg_rounded_orange"
+        android:onClick="goNext"
+        android:text="@string/b_lpa2_01"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_lpa2_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_lpa2_02"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lpa2_01"
+        app:layout_constraintStart_toStartOf="@+id/tv_lpa2_01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lpa2_01" />
+
+    <TextView
+        android:id="@+id/tv_lpa2_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/tv_lpa2_01"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view19" />
+
+    <Spinner
+        android:id="@+id/s_lpa2_01"
+        android:layout_width="213dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:entries="@array/s_lpa2_01"
+        android:padding="10dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/b_lpa2_01"
+        app:layout_constraintEnd_toEndOf="@+id/tv_lpa2_01"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/tv_lpa2_01"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lpa2_02" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
